@@ -2,17 +2,23 @@
   display: inline-flex;
   padding: 10px 20px;
 
-  color: $color-default-white;
+  font-family: $ff-basic;
 
-  background-color: $color-neon-blue;
+
+  color: $color-default-white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+
+  background-color: transparent;
   border: none;
   cursor: pointer;
 
-  transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
-  }
+  transition: opacity $trans-default;
 
   &:disabled {
     opacity: 0.5;
