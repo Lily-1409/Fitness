@@ -13,4 +13,3 @@ triggers.forEach((anchor) => {
     }
   });
 });
-
