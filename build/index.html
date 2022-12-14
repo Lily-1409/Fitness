@@ -28,11 +28,14 @@
             </ul>
             <div class="about-info">
               <p>омск</p>
-              <h1>ФИТНЕС ЦЕНТР</h1>
+              <h1>Фитнес <span>центр</span></h1>
               <a class="about-button btn" href="#subscription">Купить абонемент</a>
             </div>
             <div class="about-image">
-              <img src="./img/main-screen-desktop.jpg" width="500" height="556">
+              <picture>
+                <source type="image/webp" srcset="./img/main-screen-desktop.webp 1x, ./img/main-screen-desktop@2x.webp 2x">
+                <img src="./img/main-screen-desktop.jpg" srcset="./img/main-screen-desktop@2x.jpg 2x" width="500" height="556" alt="фото тренера">
+              </picture>
             </div>
           </div>
         </div>
@@ -47,3 +50,4 @@
     <script src="js/main.min.js"></script>
   </body>
 </html>
+
