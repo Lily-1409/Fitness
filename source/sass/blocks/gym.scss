@@ -20,10 +20,10 @@
 
   @media (max-width: 1199px) {
     flex-direction: column;
-    gap: 42px;
+    gap: 43px;
   }
 
-  @media (max-width: 1199px) {
+  @media (max-width: 767px) {
     gap: 32px;
   }
 }
@@ -31,7 +31,7 @@
 // стиизация текстового блока
 .gym-descripton {
   padding: 40px 0 40px 60px;
-  max-width: 438px;
+  max-width: 436px;
   flex: 1 1 auto;
 
   @media (max-width: 1199px) {
@@ -126,12 +126,13 @@
 // стилизация контейнера для изображения и видео
 .gym-image {
   position: relative;
+  flex: 1 1 auto;
   z-index: 1;
 
   @media (max-width: 1199px) {
     display: flex;
     flex-direction: column;
-    align-items: center;;
+    align-items: center;
   }
 
   @media (max-width: 767px) {
@@ -140,17 +141,102 @@
 }
 
 // стилизация изображения тренажерного зала
-.gym-image img {
-  object-fit: cover;
+.gym-image__wrapper {
+  position: relative;
   width: 100%;
-  height: 100%;
+  max-width: 660px;
+  height: 401px;
+
+  @media (max-width: 1199px) {
+    height: 345px;
+    max-width: unset;
+  }
+
+  @media (max-width: 767px) {
+    height: 313px;
+    max-width: unset;
+  }
 }
 
+.gym-image__wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom left;
+
+  @media (max-width: 1199px) {
+    object-position: center;
+  }
+
+  @media (max-width: 767px) {
+    object-position: top 0 right -15px;
+  }
+}
+
+// .gym-image__wrapper {
+//   width: 100%;
+//   height: 0;
+//   padding-bottom: 61%;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+
+//   background-image: url("../img/gym-desktop.jpg");
+
+//   @supports (background-image: url("../img/gym-desktop.webp")) {
+//     background-image: url("../img/gym-desktop.webp");
+//   }
+
+//   @media only screen and (min-resolution: 1.5),
+//     only screen and (min-resolution: 144dpi) {
+//     background-image: url("../img/gym-desktopp@2x.jpg");
+
+//     @supports (background-image: url("../img/gym-desktop@2x.webp")) {
+//       background-image: url("../img/gym-desktop@2x.webp");
+//     }
+//   }
+
+//   @media (max-width: 1199px) {
+//     padding-bottom: 51%;
+//     background-image: url("../img/gym-tablet.jpg");
+
+//     @supports (background-image: url("../img/gym-tablet.webp")) {
+//       background-image: url("../img/gym-tablet.webp");
+//     }
+
+//     @media only screen and (min-resolution: 1.5),
+//       only screen and (min-resolution: 144dpi) {
+//       background-image: url("../img/gym-tablet@2x.jpg");
+
+//       @supports (background-image: url("../img/gym-tablet@2x.webp")) {
+//         background-image: url("../img/gym-tablett@2x.webp");
+//       }
+//     }
+//   }
+
+//   @media (max-width: 767px) {
+//     padding-bottom: 98%;
+//     background-image: url("../img/gym-mobile.jpg");
+
+//     @supports (background-image: url("../img/gym-mobile.webp")) {
+//       background-image: url("../img/gym-mobile.webp");
+//     }
+
+//     @media only screen and (min-resolution: 1.5),
+//       only screen and (min-resolution: 144dpi) {
+//       background-image: url("../img/gym-mobile@2x.jpg");
+
+//       @supports (background-image: url("../img/gym-mobile@2x.webp")) {
+//         background-image: url("../img/gym-mobile@2x.webp");
+//       }
+//     }
+//   }
+// }
 // стилизация видео тренажерного зала
 .gym-video {
   position: relative;
   width: 364px;
-  padding-bottom: 26%;
+  height: 228px;
   z-index: 10;
 
   margin-top: -114px;
@@ -159,10 +245,13 @@
   @media (max-width: 1199px) {
     margin-top: -84px;
     margin-left: 0;
+    width: 266px;
+    height: 167px;
   }
 
   @media (max-width: 767px) {
     margin-top: 0;
+    width: 320px;
   }
 }
 
@@ -197,12 +286,20 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @media (max-width: 1199px) {
+    left: 91px;
+  }
+
+  @media (max-width: 767px) {
+    left: 120px;
+  }
 }
 
 .gym-button img {
   @media (max-width: 1199px) {
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
   }
 }
 

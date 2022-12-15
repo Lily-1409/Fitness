@@ -52,20 +52,68 @@
               </div>
             </div>
             <div class="gym-image">
-              <picture>
-                <source type="image/webp" srcset="./img/gym.webp 1x, ./img/gym@2x.webp 2x">
-                <img src="./img/gym.jpg" srcset="./img/gymp@2x.jpg" width="660" height="401" alt="Изображение спортзала">
-              </picture>
+              <div class="gym-image__wrapper">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-full.webp 1x, img/gym-full@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/gym-full.jpg 1x, img/gym-full@2x.jpg 2x">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
+                  <source media="(max-width: 1199px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x">
+                  <source type="image/webp" srcset="./img/gym-full.webp 1x, ./img/gym-full@2x.webp 2x">
+                  <img src="./img/gym-full.jpg" width="660" height="401" alt="Изображение спортзала">
+                </picture>
+              </div>
               <div class="gym-video">
                 <a class="gym-video__link" href="https://www.youtube.com/embed/9TZXsZItgdw">
                   <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-video-mobile.webp 1x, img/gym-video-mobile@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/gym-video-mobile.jpg 1x, img/gym-video-mobile@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-video-tablet.webp 1x, img/gym-video-tablet@2x.webp 2x">
+                    <source media="(max-width: 1199px)" srcset="img/gym-video-tablet.jpg 1x, img/gym-video-tablet@2x.jpg 2x">
                     <source type="image/webp" srcset="./img/gym-video-desktop.webp 1x, ./img/gym-video-desktop@2x.webp 2x">
                     <img class="gym-video__media" src="./img/gym-video-desktop.jpg" srcset="./img/gymp-video-desktop@2x.jpg" width="364" height="228" alt="Изображение заставки видео">
                   </picture>
                 </a>
                 <button class="gym-button" aria-label="Запустить видео">
-                  <img src="./img/svg/play-icon.svg"width="100" height="100" alt="Кнопка запуска видео">
+                  <img src="./img/svg/play-icon.svg" width="100" height="100" alt="Кнопка запуска видео">
                 </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="subscription-wrapper">
+          <div class="container">
+            <div class="subscription">
+              <h2>Абонементы</h2>
+              <ul class="container--tabs">
+                <li class="tab tabs--active">1 месяц</li>
+                <li class="tab">6 месяцев</li>
+                <li class="tab">12 месяцев</li>
+              </ul>
+              <div class="container--content">
+                <div class="content content--active" tabindex="1">
+                  <h3>C тренером</h3>
+                  <span class="content__number-workout">12 занятий</span>
+                  <span class="content__price-workout">5000 Р
+                    <span class="content__price-workout--shadow">5000</span>
+                  </span>
+                  <a class="content__buy btn" href="#">Купить абонемент</a>
+                </div>
+                <div class="content" tabindex="0">
+                  <h3>Дневной</h3>
+                  <span class="content__number-workout">с 8:00 до 17:00</span>
+                  <span class="content__price-workout">1700  Р
+                    <span class="content__price-workout--shadow">1700</span>
+                  </span>
+                  <a class="content__buy btn" href="#">Купить абонемент</a>
+                </div>
+                <div class="content" tabindex="0">
+                  <h3>Полный день</h3>
+                  <span class="content__number-workout">с 8:00 до 22:00</span>
+                  <span class="content__price-workout">2700 Р
+                    <span class="content__price-workout--shadow">2700</span>
+                  </span>
+                  <a class="content__buy btn" href="#">Купить абонемент</a>
+                </div>
               </div>
             </div>
           </div>
