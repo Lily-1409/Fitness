@@ -995,7 +995,6 @@ button,
 }
 
 .gym-image {
-  height: 401px;
   position: relative;
   z-index: 1;
 }
@@ -1009,31 +1008,28 @@ button,
 
 .gym-video {
   position: relative;
-  z-index: 10;
   width: 364px;
+  padding-bottom: 26%;
+  z-index: 10;
   margin-top: -114px;
   margin-left: -64px;
 }
 
-.gym-video-player {
-  position: relative;
-  overflow: hidden;
+.gym-video__link {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 0;
-  padding-bottom: 50%;
+  height: 100%;
 }
 
-.gym-video-player {
+.gym-video__media {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   border: none;
-}
-
-.gym-video__image {
-  height: 228px;
 }
 
 .gym-video__image img {
@@ -1051,12 +1047,8 @@ button,
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background-color: transparent;
-  border-radius: 50%;
-  width: 110px;
-  height: 110px;
-  border: 2px solid red;
-  outline: none;
-  display: none;
+  border: none;
+  cursor: pointer;
 }
 
 .gym-video:hover .gym-button,
@@ -1252,7 +1244,6 @@ button,
   }
 
   .gym-image {
-    height: 345px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1268,18 +1259,6 @@ button,
   .gym-video {
     margin-top: -84px;
     margin-left: 0;
-  }
-
-  .gym-video__image {
-    height: 167px;
-  }
-
-  .gym-button {
-    top: 49%;
-    left: 34%;
-    width: 81px;
-    height: 81px;
-    border: 2px solid red;
   }
 
   .gym-button img {
@@ -1396,7 +1375,6 @@ button,
   }
 
   .gym-image {
-    height: 313px;
     gap: 40px;
   }
 

@@ -56,21 +56,16 @@
                 <source type="image/webp" srcset="./img/gym.webp 1x, ./img/gym@2x.webp 2x">
                 <img src="./img/gym.jpg" srcset="./img/gymp@2x.jpg" width="660" height="401" alt="Изображение спортзала">
               </picture>
-              <div class="gym-video gym-video--enabled">
-                <div class="gym-video__image player">
-                  <a class="video-link" href="https://www.youtube.com/embed/9TZXsZItgdw">
-                    <picture>
-                      <source type="image/webp" srcset="./img/gym-video-desktop.webp 1x, ./img/gym-video-desktop@2x.webp 2x">
-                      <img src="./img/gym-video-desktop.jpg" srcset="./img/gymp-video-desktop@2x.jpg" width="364" height="228" alt="Изображение заставки видео">
-                    </picture>
-                  </a>
-                  <button class="gym-button">
-                    <picture>
-                      <source type="image/webp" srcset="./img/play-button-desktop.webp 1x, ./img/play-button-desktop@2x.webp 2x">
-                      <img src="./img/play-button-desktop.png" srcset="./img/play-button-desktop@2x.png" width="100" height="100" alt="Кнока для проигрывания видео">
-                    </picture>
-                  </button>
-                </div>
+              <div class="gym-video">
+                <a class="gym-video__link" href="https://www.youtube.com/embed/9TZXsZItgdw">
+                  <picture>
+                    <source type="image/webp" srcset="./img/gym-video-desktop.webp 1x, ./img/gym-video-desktop@2x.webp 2x">
+                    <img class="gym-video__media" src="./img/gym-video-desktop.jpg" srcset="./img/gymp-video-desktop@2x.jpg" width="364" height="228" alt="Изображение заставки видео">
+                  </picture>
+                </a>
+                <button class="gym-button" aria-label="Запустить видео">
+                  <img src="./img/svg/play-icon.svg"width="100" height="100" alt="Кнопка запуска видео">
+                </button>
               </div>
             </div>
           </div>

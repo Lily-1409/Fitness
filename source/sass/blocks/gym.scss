@@ -28,6 +28,7 @@
   }
 }
 
+// стиизация текстового блока
 .gym-descripton {
   padding: 40px 0 40px 60px;
   max-width: 438px;
@@ -122,34 +123,36 @@
   }
 }
 
+// стилизация контейнера для изображения и видео
 .gym-image {
-  height: 401px;
   position: relative;
   z-index: 1;
 
   @media (max-width: 1199px) {
-    height: 345px;
     display: flex;
     flex-direction: column;
     align-items: center;;
   }
 
   @media (max-width: 767px) {
-    height: 313px;
     gap: 40px;
   }
 }
 
+// стилизация изображения тренажерного зала
 .gym-image img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
+// стилизация видео тренажерного зала
 .gym-video {
   position: relative;
-  z-index: 10;
   width: 364px;
+  padding-bottom: 26%;
+  z-index: 10;
+
   margin-top: -114px;
   margin-left: -64px;
 
@@ -163,31 +166,21 @@
   }
 }
 
-.gym-video-player {
-  position: relative;
-  overflow: hidden;
+.gym-video__link {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 0;
-  padding-bottom: 50%;
+  height: 100%;
 }
 
-.gym-video-player {//класс который надо добавить в видео
+.gym-video__media {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   border: none;
-}
-
-.gym-video__image {
-  // width: 364px;
-  height: 228px;
-
-  @media (max-width: 1199px) {
-    // width: 266px;
-    height: 167px;
-  }
 }
 
 .gym-video__image img {
@@ -202,19 +195,14 @@
   left: 127px;
   transform: translateY(-50%);
   background-color: transparent;
-  border-radius: 50%;
-  width: 110px;
-  height: 110px;
-  border: 2px solid red;
-  outline: none;
-  display: none;
+  border: none;
+  cursor: pointer;
+}
 
+.gym-button img {
   @media (max-width: 1199px) {
-    top: 49%;
-    left: 34%;
-    width: 81px;
-    height: 81px;
-    border: 2px solid red;
+    height: 80px;
+    width: 80px;
   }
 }
 
@@ -223,17 +211,11 @@
   border: 2px solid blue;
 }
 
+// enabled
 .gym-video--enabled {
   cursor: pointer;
 }
 
 .gym-video--enabled .gym-button {
   display: block;
-}
-
-.gym-button img {
-  @media (max-width: 1199px) {
-    height: 80px;
-    width: 80px;
-  }
 }
