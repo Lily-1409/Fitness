@@ -1113,7 +1113,7 @@ button,
   flex-direction: row;
   position: relative;
   gap: 46px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .container--tabs::after {
@@ -1137,12 +1137,16 @@ button,
   padding: 10px 0;
 }
 
-.tabs--active {
+.tab--active {
   opacity: 1;
   border-bottom: 2px solid #d10a42;
 }
 
-.container--content {
+.content {
+  display: none;
+}
+
+.content--active {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -1150,7 +1154,7 @@ button,
   gap: 40px;
 }
 
-.content {
+.content-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1159,15 +1163,20 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ffffff;
-  padding: 61px 70px 64px 77px;
+  padding: 56px 69px 61px 69px;
+  border: 7px solid transparent;
+  outline: none;
 }
 
-.content:hover,
-.content:focus {
-  border: 1px solid linear-gradient(to right, #d10a43, #00359f);
+.content-item:hover,
+.content-item:focus {
+  border: 7px solid;
+  border-image-slice: 1;
+  border-width: 7px;
+  border-image-source: linear-gradient(145deg, #d10a43 0%, #00359f 100%);
 }
 
-.content h3 {
+.content-item h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1196,9 +1205,13 @@ button,
   font-size: 60px;
   line-height: 90px;
   color: #103aae;
+  white-space: nowrap;
   margin-bottom: 32px;
   position: relative;
   z-index: 10;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .content__price-workout--shadow {
@@ -1229,11 +1242,18 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  outline: none;
 }
 
-.content__buy:hover,
-.content__buy:focus {
-  background-color: linear-gradient(to right, #ed0233, #003eb7);
+.content-item:hover .content__buy,
+.content-item:focus .content__buy,
+.content__buy:hover {
+  color: #ffffff;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
 }
 
 /* @mixin hover-focus {
@@ -1451,11 +1471,7 @@ button,
   }
 
   .subscription {
-    padding: 100px 0;
-  }
-
-  .subscription {
-    padding: 64px 0;
+    padding: 101px 0;
   }
 
   .subscription h2 {
@@ -1463,23 +1479,20 @@ button,
     line-height: 50px;
   }
 
-  .subscription h2 {
-    font-size: 32px;
-    line-height: 38px;
-  }
-
   .container--tabs {
     gap: 54px;
+    margin-bottom: 42px;
   }
 
-  .container--content {
+  .content--active {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     padding: 0 117px;
+    gap: 31px;
   }
 
-  .content {
-    padding: 64px 104px 68px 117px;
+  .content-item {
+    padding: 59px 110px 69px;
   }
 }
 
@@ -1617,35 +1630,48 @@ button,
     left: 120px;
   }
 
+  .subscription {
+    padding: 61px 0 72px;
+  }
+
+  .subscription h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
   .container--tabs {
     gap: 45px;
+    margin-bottom: 38px;
   }
 
   .tab {
     font-size: 16px;
     line-height: 24px;
+    padding: 12px 0;
   }
 
-  .container--content {
+  .content--active {
     padding: 0;
+    gap: 33px;
   }
 
-  .content {
-    padding: 52px 27px 57px 41px;
+  .content-item {
+    padding: 41px 34px 49px 33px;
   }
 
-  .content h3 {
+  .content-item h3 {
     font-size: 22px;
     line-height: 24px;
   }
 
   .content__number-workout {
-    margin-bottom: 50px;
+    margin-bottom: 54px;
   }
 
   .content__price-workout {
     font-size: 48px;
     line-height: 72px;
+    margin-bottom: 30px;
   }
 
   .content__price-workout--shadow {
