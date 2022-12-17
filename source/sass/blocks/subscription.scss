@@ -1,5 +1,52 @@
 .subscription-wrapper {
   background-color: $ghost-white;
+  position: relative;
+}
+
+.subscription-wrapper::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(43%, 31%);
+  width: 500px;
+  height: 500px;
+  background-image: url("../img/rod-discs-desktop.png");
+
+  @supports (background-image: url("../img/rod-discs-desktop.webp")) {
+    background-image: url("../img/rod-discs-desktop.webp");
+  }
+
+  @media only screen and (min-resolution: 1.5),
+    only screen and (min-resolution: 144dpi) {
+    background-image: url("../img/rod-discs-desktop@2x.jpg");
+
+    @supports (background-image: url("../img/rod-discs-desktop@2x.webp")) {
+      background-image: url("../img/rod-discs-desktop@2x.webp");
+    }
+  }
+
+  @media (max-width: 1199px) {
+    background-image: url("../img/rod-discs-tablet.jpg");
+    transform: translate(31%, 36%);
+
+    @supports (background-image: url("../img/rod-discs-tablet.webp")) {
+      background-image: url("../img/rod-discs-tablet.webp");
+    }
+
+    @media only screen and (min-resolution: 1.5),
+      only screen and (min-resolution: 144dpi) {
+      background-image: url("../img/rod-discs-tablet@2x.jpg");
+
+      @supports (background-image: url("../img/rod-discs-tablet@2x.webp")) {
+        background-image: url("../img/rod-discs-tablet@2x.webp");
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .subscription {
@@ -79,6 +126,7 @@
   color: $sapphire;
   opacity: 0.5;
   padding: 10px 0;
+  cursor: pointer;
 
   @media (max-width: 767px) {
     font-size: 16px;
@@ -95,6 +143,8 @@
 // стилизация содержимого вкладок
 .content {
   display: none;
+  z-index: 10;
+  position: relative;
 }
 .content--active {
   display: grid;
@@ -104,7 +154,6 @@
   @media (max-width: 1199px) {
     grid-template-columns: 1fr;
     padding: 0 117px;
-    gap: 31px;
   }
 
   @media (max-width: 767px) {
@@ -120,14 +169,17 @@
   padding: 56px 69px 61px 69px;
   border: 7px solid transparent;
   outline: none;
+  overflow: auto;
+  max-height: 448px;
 
 
   @media (max-width: 1199px) {
-    padding: 59px 110px 69px;
+    padding: 59px 110px 60px;
   }
 
   @media (max-width: 767px) {
     padding: 41px 34px 49px 33px;
+    max-height: 384px;
   }
 }
 
@@ -193,11 +245,19 @@
   }
 }
 
+.content__price-workout svg {
+  @media (max-width: 767px) {
+    width: 24px;
+    height: 33px;
+  }
+}
+
 .content__price-workout--shadow {
   position: absolute;
   content: '5000';
-  bottom: -4px;
-  left: 2px;
+  bottom: -5%;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: $ff-basic;
   font-style: normal;
   font-weight: 700;
@@ -210,8 +270,6 @@
   @media (max-width: 767px) {
     font-size: 80px;
     line-height: 120px;
-    bottom: -3px;
-    left: 23px;
   }
 }
 

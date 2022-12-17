@@ -1080,6 +1080,26 @@ button,
 
 .subscription-wrapper {
   background-color: #f8f9fc;
+  position: relative;
+}
+
+.subscription-wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translate(43%, 31%);
+  -ms-transform: translate(43%, 31%);
+  transform: translate(43%, 31%);
+  width: 500px;
+  height: 500px;
+  background-image: url("../img/rod-discs-desktop.png");
+}
+
+@supports (background-image: url("../img/rod-discs-desktop.webp")) {
+  .subscription-wrapper::before {
+    background-image: url("../img/rod-discs-desktop.webp");
+  }
 }
 
 .subscription {
@@ -1135,6 +1155,7 @@ button,
   color: #102654;
   opacity: 0.5;
   padding: 10px 0;
+  cursor: pointer;
 }
 
 .tab--active {
@@ -1144,6 +1165,8 @@ button,
 
 .content {
   display: none;
+  z-index: 10;
+  position: relative;
 }
 
 .content--active {
@@ -1166,6 +1189,8 @@ button,
   padding: 56px 69px 61px 69px;
   border: 7px solid transparent;
   outline: none;
+  overflow: auto;
+  max-height: 448px;
 }
 
 .content-item:hover,
@@ -1217,8 +1242,11 @@ button,
 .content__price-workout--shadow {
   position: absolute;
   content: "5000";
-  bottom: -4px;
-  left: 2px;
+  bottom: -5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1254,6 +1282,151 @@ button,
   border-image-source: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
   background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
   background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+}
+
+.promo-wrapper {
+  padding: 117px 0 106px;
+}
+
+.promo {
+  background-color: #ed0233;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.promo-description {
+  padding: 81px 77px 83px 76px;
+}
+
+.promo-info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 58px;
+  margin-bottom: 8px;
+  padding-left: 15px;
+}
+
+.promo-info-wrapper h2 {
+  padding: 0;
+  margin: 0;
+  margin-top: 6px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 82px;
+  line-height: 79px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.promo-description p {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  margin-bottom: 48px;
+}
+
+.promo-description__button {
+  border: 4px solid #ffffff;
+  height: 67px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.promo-info {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.promo-info__date {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.promo-info__time {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.promo-info__title {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  border-bottom: 1px solid #ffffff;
+}
+
+.promo-info__date-time {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.promo-info__month {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.promo-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 /* @mixin hover-focus {
@@ -1470,6 +1643,19 @@ button,
     width: 70px;
   }
 
+  .subscription-wrapper::before {
+    background-image: url("../img/rod-discs-tablet.jpg");
+    -webkit-transform: translate(31%, 36%);
+    -ms-transform: translate(31%, 36%);
+    transform: translate(31%, 36%);
+  }
+
+@supports (background-image: url("../img/rod-discs-tablet.webp")) {
+    .subscription-wrapper::before {
+      background-image: url("../img/rod-discs-tablet.webp");
+    }
+}
+
   .subscription {
     padding: 101px 0;
   }
@@ -1488,12 +1674,76 @@ button,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     padding: 0 117px;
-    gap: 31px;
   }
 
   .content-item {
-    padding: 59px 110px 69px;
+    padding: 59px 110px 60px;
   }
+
+  .promo-wrapper {
+    padding: 102px 0 100px;
+  }
+
+  .promo-description {
+    padding: 46px 44px;
+  }
+
+  .promo-info-wrapper {
+    gap: 33px;
+    padding-left: 9px;
+    margin-bottom: 2px;
+  }
+
+  .promo-info-wrapper h2 {
+    font-size: 48px;
+    line-height: 46px;
+  }
+
+  .promo-description p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 30px;
+  }
+
+  .promo-description__button {
+    font-size: 10px;
+    line-height: 12px;
+    border-width: 2px;
+    height: 39px;
+  }
+
+  .promo-info {
+    font-size: 12px;
+    line-height: 18px;
+    gap: 0;
+  }
+
+  .promo-info__date-time {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: -3px;
+  }
+
+  .promo-info__date-time {
+    gap: 3px;
+  }
+
+  .promo-info__month {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-resolution: 1.5), only screen and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1199px) and (-o-min-device-pixel-ratio: 3/2), only screen and (max-width: 1199px) and (min-resolution: 144dpi) {
+  .subscription-wrapper::before {
+    background-image: url("../img/rod-discs-tablet@2x.jpg");
+  }
+
+@supports (background-image: url("../img/rod-discs-tablet@2x.webp")) {
+    .subscription-wrapper::before {
+      background-image: url("../img/rod-discs-tablet@2x.webp");
+    }
+}
 }
 
 @media (max-width: 767px) {
@@ -1630,6 +1880,10 @@ button,
     left: 120px;
   }
 
+  .subscription-wrapper::before {
+    display: none;
+  }
+
   .subscription {
     padding: 61px 0 72px;
   }
@@ -1657,6 +1911,7 @@ button,
 
   .content-item {
     padding: 41px 34px 49px 33px;
+    max-height: 384px;
   }
 
   .content-item h3 {
@@ -1674,11 +1929,33 @@ button,
     margin-bottom: 30px;
   }
 
+  .content__price-workout svg {
+    width: 24px;
+    height: 33px;
+  }
+
   .content__price-workout--shadow {
     font-size: 80px;
     line-height: 120px;
-    bottom: -3px;
-    left: 23px;
+  }
+
+  .promo-wrapper {
+    padding: 70px 0 70px;
+  }
+
+  .promo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .promo-description {
+    padding: 49px 44px 52px;
+  }
+
+  .promo-info-wrapper h2 {
+    margin-top: 4px;
   }
 }
 
@@ -1686,4 +1963,16 @@ button,
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
   }
+}
+
+@media only screen and (min-resolution: 1.5), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-resolution: 144dpi) {
+  .subscription-wrapper::before {
+    background-image: url("../img/rod-discs-desktop@2x.jpg");
+  }
+
+@supports (background-image: url("../img/rod-discs-desktop@2x.webp")) {
+    .subscription-wrapper::before {
+      background-image: url("../img/rod-discs-desktop@2x.webp");
+    }
+}
 }
