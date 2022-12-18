@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Описание проекта">
     <title>Fitness</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -204,10 +208,64 @@
                 <a class="promo-description__button btn" href="#">Заполнить заявку</a>
               </div>
               <div class="promo-image">
-                <img class="promo-image__image" src="./img/promo-desktop.jpg" width="660px" height="500px">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/promo-mobile.webp 1x, img/promo-mobile@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/promo-mobile.jpg 1x, img/promo-mobile@2x.jpg 2x">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/promo-tablet.webp 1x, img/promo-tablet@2x.webp 2x">
+                  <source media="(max-width: 1199px)" srcset="img/promo-tablet.jpg 1x, img/promo-tablet@2x.jpg 2x">
+                  <source type="image/webp" srcset="./img/promo-desktop.webp 1x, ./img/promo-desktop@2x.webp 2x">
+                  <img class="promo-image__image" src="./img/promo-desktop.jpg" width="660px" height="500px">
+                </picture>
               </div>
             </div>
           </div>
+        </section>
+        <section class="trainers-wrapper">
+          <h2>Тренеры</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="slider-image-wrapper">
+                  <img src="./img/trainer-1-desktop.jpg" width="260" height="294">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-image-wrapper">
+                  <img src="./img/trainer-2-desktop.jpg" width="260" height="294">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-image-wrapper">
+                  <img src="./img/trainer-3-desktop.jpg" width="260" height="294">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-image-wrapper">
+                  <img src="./img/trainer-4-desktop.jpg" width="260" height="294">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-image-wrapper">
+                  <img src="./img/trainer-2-desktop.jpg" width="260" height="294">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-image-wrapper">
+                  <img src="./img/trainer-3-desktop.jpg" width="260" height="294">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-image-wrapper">
+                  <img src="./img/trainer-4-desktop.jpg" width="260" height="294">
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="swiper-button-prev" type="button"><span class="visually-hidden">Предыдущий слайд</span>
+          </button>
+          <button class="swiper-button-next" type="button"><span class="visually-hidden">Следующий слайд</span>
+          </button>
         </section>
       </main>
       <footer>
@@ -215,6 +273,7 @@
       </footer>
     </div>
     <script src="js/vendor.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>

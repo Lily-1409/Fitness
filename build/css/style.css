@@ -1289,7 +1289,7 @@ button,
 }
 
 .promo {
-  background-color: #ed0233;
+  background-color: #000040;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1299,6 +1299,7 @@ button,
 }
 
 .promo-description {
+  background-color: #ed0233;
   padding: 81px 77px 83px 76px;
 }
 
@@ -1425,8 +1426,64 @@ button,
 .promo-image {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+}
+
+.trainers-wrapper {
+  padding: 0 0 90px 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1160px;
+  position: relative;
+}
+
+.trainers-wrapper h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  color: #102654;
+  text-align: left;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 49px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  border: none;
+  background-color: transparent;
+}
+
+.swiper-button-prev {
+  left: -64px;
+}
+
+.swiper-button-next {
+  right: -60px;
+  -webkit-transform: translate(8%, 23%);
+  -ms-transform: translate(8%, 23%);
+  transform: translate(8%, 23%);
+}
+
+.swiper-button-prev::after {
+  content: "";
+  background-image: url("../../img/svg/arrow-prev.svg");
+  width: 16px;
+  height: 32px;
+}
+
+.swiper-button-next::after {
+  content: "";
+  background-image: url("../../img/svg/arrow-next.svg");
+  width: 18px;
+  height: 32px;
+}
+
+.slider-image-wrapper img {
+  width: 100%;
+  height: 100%;
 }
 
 /* @mixin hover-focus {
@@ -1732,6 +1789,16 @@ button,
     font-size: 10px;
     line-height: 15px;
   }
+
+  .trainers-wrapper {
+    padding: 0 45px;
+  }
+
+  .trainers-wrapper h2 {
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 1199px) and (min-resolution: 1.5), only screen and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1199px) and (-o-min-device-pixel-ratio: 3/2), only screen and (max-width: 1199px) and (min-resolution: 144dpi) {
@@ -1956,6 +2023,15 @@ button,
 
   .promo-info-wrapper h2 {
     margin-top: 4px;
+  }
+
+  .trainers-wrapper {
+    padding: 0 15px;
+  }
+
+  .trainers-wrapper h2 {
+    font-size: 32px;
+    line-height: 38px;
   }
 }
 
