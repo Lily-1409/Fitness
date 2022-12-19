@@ -20,8 +20,8 @@ export const swiperTrainers = new window.Swiper('.swiper-trainers', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-trainers-button-next',
+    prevEl: '.swiper-trainers-button-prev',
   },
 });
 
@@ -34,7 +34,7 @@ export const swiperReviews = new window.Swiper('.swiper-reviews', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-reviews-button-next',
+    prevEl: '.swiper-reviews-button-prev',
   },
 });

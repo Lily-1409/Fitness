@@ -8,10 +8,11 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  transform: translate(43%, 31%);
-  width: 500px;
-  height: 500px;
+  transform: translate(4%, 17%);
+  width: 298px;
+  height: 412px;
   background-image: url("../img/rod-discs-desktop.png");
+  background-repeat: no-repeat;
 
   @supports (background-image: url("../img/rod-discs-desktop.webp")) {
     background-image: url("../img/rod-discs-desktop.webp");

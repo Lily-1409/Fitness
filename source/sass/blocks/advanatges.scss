@@ -1,0 +1,234 @@
+.advantages-wrapper {
+  padding: 146px 0 90px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1160px;
+  position: relative;
+}
+
+.advantages-wrapper h2 {
+  font-family: $ff-heading;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  color: $sapphire;
+  letter-spacing: 0.03em;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 53px;
+  text-align: center;
+
+  @media (max-width: 1199px) {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.advantages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 240px 1fr;
+  column-gap: 56px;
+  row-gap: 155px;
+  position: relative;
+
+  padding: 0 73px;
+
+  @media (max-width: 1199px) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: unset;
+    row-gap: 50px;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    column-gap: 60px;
+    row-gap: 50px;
+
+    padding: 0;
+  }
+}
+
+.advantages-item::before,
+.advantages-item::after {
+  content: '';
+  position: absolute;
+  width: 29%;
+  height: 2px;
+  background-color: rgba(209, 10, 66, 0.2);
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.advantages-item::before {
+  top: 48%;
+  left: 53px;
+}
+
+.advantages-item::after {
+  top: 48%;
+  right: 66px;
+}
+
+.advantages-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 30px;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    column-gap: unset;
+
+    padding: 0 47px;
+  }
+}
+
+.advantages-item__number {
+  font-family: $ff-basic;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 71px;
+  line-height: normal;
+  color: $sapphire;
+  background: linear-gradient(142.51deg, #D10A42 0%, #0041CA 87.33%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  grid-column: 1/2;
+  grid-row: 1/3;
+  margin-top: -15px;
+
+  @media (max-width: 767px) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+.advantages-item__unit {
+  font-family: $ff-basic;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #2E35ac;
+
+  display: block;
+  margin-top: -10px;
+}
+
+.advantages h4 {
+  font-family: $ff-basic;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: normal;
+  color: $sapphire;
+
+  margin: 0;
+  padding: 0;
+
+  grid-column: 2/3;
+  grid-row: 1/2;
+
+  @media (max-width: 1199px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (max-width: 767px) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+
+.advantages p {
+  font-family: $ff-basic;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $sapphire;
+
+  margin: 0;
+  padding: 0;
+
+  grid-column: 2/3;
+  grid-row: 2/3;
+
+  @media (max-width: 767px) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
+
+.advantages-item__main {
+  background-color: #1C3374;
+  padding: 63px 30px 34px 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  grid-column: 2/3;
+  grid-row: 1/3;
+
+  @media (max-width: 1199px) {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  @media (max-width: 767px) {
+    grid-column: 1/2;
+    grid-row: unset;
+    padding: 0;
+  }
+}
+
+.advantages-item__main .advantages-item__number {
+  font-family: $ff-basic;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 74px;
+  line-height: normal;
+  color: $color-default-white;
+  background: unset;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+}
+
+.advantages-item__main h4 {
+  font-family: $ff-basic;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 39px;
+  color: $color-default-white;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.advantages-item__main p {
+  font-family: $ff-basic;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-default-white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}

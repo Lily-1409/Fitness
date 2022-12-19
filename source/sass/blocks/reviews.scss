@@ -1,5 +1,6 @@
 .reviews-wrapper {
   padding: 120px 0;
+  position: relative;
 }
 
 .reviews-wrapper h2 {
@@ -31,6 +32,7 @@
 .swiper-reviews {
   overflow: hidden;
   margin: 0 300px;
+  position: relative;
 
   @media (max-width: 1199px) {
     margin: 0 56px;
@@ -110,5 +112,65 @@
   @media (max-width: 767px) {
     grid-column: 1/3;
     grid-row: 2/3;
+  }
+}
+
+.reviews-wrapper .swiper-button-prev,
+.reviews-wrapper .swiper-button-next {
+  border: none;
+  background-color: transparent;
+}
+
+.reviews-wrapper .swiper-button-prev {
+  left: 339px;
+  top: 354px;
+
+  @media (max-width: 1199px) {
+    left: 36px;
+    top: 338px;
+  }
+
+  @media (max-width: 767px) {
+    left: 6px;
+    top: 374px;
+  }
+}
+
+.reviews-wrapper .swiper-button-next {
+  right: 330px;
+  top: 347px;
+
+  @media (max-width: 1199px) {
+    right: 29px;
+    top: 328px;
+  }
+
+  @media (max-width: 767px) {
+    right: 0;
+    top: 363px;
+  }
+}
+
+.reviews-wrapper .swiper-button-prev::after {
+  content: '';
+  background-image: url("../../img/svg/arrow-prev.svg");
+  width: 16px;
+  height: 32px;
+
+  @media (max-width: 767px) {
+    width: 10px;
+    height: 28px;
+  }
+}
+
+.reviews-wrapper .swiper-button-next::after {
+  content: '';
+  background-image: url("../../img/svg/arrow-next.svg");
+  width: 18px;
+  height: 32px;
+
+  @media (max-width: 767px) {
+    width: 10px;
+    height: 28px;
   }
 }
