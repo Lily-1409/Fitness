@@ -1,0 +1,94 @@
+.form-wrapper {
+  padding: 54px 168px 70px 88px;
+  background-color: $sapphire;
+  width: 49%;
+
+  @media (max-width: 1199px) {
+    padding: 62px 162px 70px 132px;
+    width:100%;
+  }
+
+  @media (max-width: 767px) {
+    padding: 62px 15px 70px 15px;
+  }
+}
+
+.form-wrapper  h2 {
+  font-family: $ff-heading;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 84px;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 17px;
+
+  @media (max-width: 1199px) {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 29px;
+  }
+
+  @media (max-width: 767px) {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 33px;
+  }
+}
+
+.form__container {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+
+  @media (max-width: 1199px) {
+    gap: 60px;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+.form__name label,
+.form__phone label {
+  display: none;
+}
+
+.form__name input,
+.form__phone input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  height: 30px;
+  flex: 0 0 auto;
+  color: $color-default-white;
+}
+
+.form__name input::-webkit-input-placeholder,
+.form__phone input::-webkit-input-placeholder {
+  font-family: $ff-basic;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+}
+
+.form__button {
+  height: 52px;
+  width: 100%;
+  border: 3px solid $color-default-white;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+}
