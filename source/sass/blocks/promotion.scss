@@ -1,5 +1,9 @@
 .promotion-wrapper {
-  padding: 150px 0 117px;
+  padding: 134px 0 50px;
+
+  @media (max-width: 1199px) {
+    padding: 73px 0 50px;
+  }
 }
 
 .promotion-wrapper h2 {
@@ -20,6 +24,7 @@
     font-size: 42px;
     line-height: 50px;
     text-align: center;
+    margin-bottom: 40px;
   }
 
   @media (max-width: 767px) {
@@ -120,7 +125,7 @@
     width: 100%;
   }
 
-  @media (max-width: 1199px) {
+  @media (max-width: 767px) {
     grid-template-columns: 1fr;
   }
 }

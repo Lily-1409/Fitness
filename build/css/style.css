@@ -1448,7 +1448,7 @@ button,
   letter-spacing: 0.03em;
   margin: 0;
   padding: 0;
-  margin-bottom: 49px;
+  margin-bottom: 31px;
 }
 
 .swiper-trainers {
@@ -1583,7 +1583,7 @@ button,
 }
 
 .reviews-wrapper {
-  padding: 120px 0;
+  padding: 65px 0 121px;
   position: relative;
 }
 
@@ -1598,7 +1598,7 @@ button,
   letter-spacing: 0.03em;
   margin: 0;
   padding: 0;
-  margin-bottom: 49px;
+  margin-bottom: 37px;
 }
 
 .swiper-reviews {
@@ -1608,7 +1608,7 @@ button,
 }
 
 .swiper-reviews-slide {
-  padding: 62px;
+  padding: 62px 62px 40px 62px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 1fr;
@@ -1701,7 +1701,7 @@ button,
 }
 
 .advantages-wrapper {
-  padding: 146px 0 90px;
+  padding: 195px 0 90px;
   margin: 0 auto;
   width: 100%;
   max-width: 1160px;
@@ -1893,7 +1893,7 @@ button,
 }
 
 .promotion-wrapper {
-  padding: 150px 0 117px;
+  padding: 134px 0 50px;
 }
 
 .promotion-wrapper h2 {
@@ -2581,7 +2581,7 @@ button,
   }
 
   .slider-card {
-    padding-bottom: 44.4%;
+    padding-bottom: 51.4%;
   }
 
   .reviews-wrapper h2 {
@@ -2615,7 +2615,7 @@ button,
     -webkit-column-gap: unset;
     -moz-column-gap: unset;
     column-gap: unset;
-    row-gap: 50px;
+    row-gap: 22px;
   }
 
   .advantages-item::before,
@@ -2637,10 +2637,15 @@ button,
     grid-row: 2/3;
   }
 
+  .promotion-wrapper {
+    padding: 73px 0 50px;
+  }
+
   .promotion-wrapper h2 {
     font-size: 42px;
     line-height: 50px;
     text-align: center;
+    margin-bottom: 40px;
   }
 
   .promotion {
@@ -2667,11 +2672,6 @@ button,
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     width: 100%;
-  }
-
-  .additional-info {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
   }
 
   .form-wrapper {
@@ -3137,6 +3137,11 @@ button,
   .promotion-wrapper h2 {
     font-size: 32px;
     line-height: 38px;
+  }
+
+  .additional-info {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .form-wrapper {
