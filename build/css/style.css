@@ -1448,7 +1448,7 @@ button,
   letter-spacing: 0.03em;
   margin: 0;
   padding: 0;
-  margin-bottom: 31px;
+  margin-bottom: 49px;
 }
 
 .swiper-trainers {
@@ -1494,6 +1494,20 @@ button,
 .slider-card {
   height: 0;
   padding-bottom: 25.4%;
+  position: relative;
+}
+
+.slider-card h4,
+.slider-card h5 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .slider-card h4 {
@@ -1525,18 +1539,6 @@ button,
   overflow-y: auto;
   padding: 54px 27px 0 31px;
   display: none;
-}
-
-.slider-card h4 {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 27px;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-  text-align: center;
 }
 
 .slider-card p {
@@ -1583,7 +1585,7 @@ button,
 }
 
 .reviews-wrapper {
-  padding: 65px 0 121px;
+  padding: 67px 0 121px;
   position: relative;
 }
 
@@ -1608,7 +1610,7 @@ button,
 }
 
 .swiper-reviews-slide {
-  padding: 62px 62px 40px 62px;
+  padding: 54px 54px 58px 62px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 1fr;
@@ -1622,6 +1624,7 @@ button,
 .swiper-reviews-slide__avatar {
   width: 80px;
   height: 80px;
+  margin-top: 10px;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -1643,7 +1646,7 @@ button,
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
-  margin: 0;
+  margin: 0 0 13px 0;
   padding: 0;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -1701,10 +1704,9 @@ button,
 }
 
 .advantages-wrapper {
-  padding: 195px 0 90px;
+  padding: 145px 0 90px;
   margin: 0 auto;
   width: 100%;
-  max-width: 1160px;
   position: relative;
   background-color: #f8f9fc;
 }
@@ -1736,7 +1738,18 @@ button,
   column-gap: 56px;
   row-gap: 155px;
   position: relative;
+  max-width: 1160px;
   padding: 0 73px;
+}
+
+.advantages-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
 }
 
 .advantages-item::before,
@@ -1756,16 +1769,6 @@ button,
 .advantages-item::after {
   top: 48%;
   right: 66px;
-}
-
-.advantages-item {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr auto;
-  grid-template-columns: 1fr auto;
-  -webkit-column-gap: 30px;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
 }
 
 .advantages-item__number {
@@ -1977,6 +1980,13 @@ button,
   text-decoration: underline;
 }
 
+.main-info__image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .additional-info {
   list-style-type: none;
   margin: 0;
@@ -1997,6 +2007,9 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 16px 35px 27px 29px;
   border: 7px solid;
   border-image-slice: 1;
@@ -2028,7 +2041,7 @@ button,
   margin-bottom: 73px;
 }
 
-.additional-info__item a {
+.additional-info__link {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -2041,9 +2054,9 @@ button,
 }
 
 .form-wrapper {
-  padding: 54px 168px 70px 88px;
+  padding: 54px 168px 70px 102px;
   background-color: #102654;
-  width: 49%;
+  width: 51%;
 }
 
 .form-wrapper h2 {
@@ -2056,7 +2069,7 @@ button,
   color: #ffffff;
   margin: 0;
   padding: 0;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 
 .form__container {
@@ -2064,7 +2077,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -2112,8 +2125,19 @@ button,
 }
 
 .contacts-block {
+  position: relative;
   padding: 56px 123px;
   width: 51%;
+}
+
+.contacts-block::before {
+  position: absolute;
+  content: "";
+  top: 49%;
+  left: 52%;
+  width: 1px;
+  height: 102px;
+  background-color: #74819c;
 }
 
 .contacts-block h2 {
@@ -2126,7 +2150,7 @@ button,
   letter-spacing: 0.03em;
   margin: 0;
   padding: 0;
-  margin-bottom: 38px;
+  margin-bottom: 37px;
 }
 
 .contacts-wrapper {
@@ -2135,19 +2159,6 @@ button,
   display: flex;
   gap: 114px;
   position: relative;
-}
-
-.contacts-wrapper::before {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 40%;
-  width: 102px;
-  height: 0px;
-  border: 1px solid #74819c;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
 }
 
 .contacts-list {
@@ -2168,7 +2179,7 @@ button,
   font-size: 16px;
   line-height: 24px;
   color: #102654;
-  margin: 0 0 4px 0;
+  margin: 0 0 3px 0;
   padding: 0;
 }
 
@@ -2196,7 +2207,6 @@ button,
 .footer-wrapper {
   background-color: #030a1a;
   padding: 41px 0;
-  margin-left: -30px;
 }
 
 .footer {
@@ -2209,12 +2219,12 @@ button,
 }
 
 .footer__logo {
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .footer__list {
   list-style-type: none;
-  margin: 5px 0 0 10px;
+  margin: 7px 0 0 9px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2564,6 +2574,7 @@ button,
     font-size: 42px;
     line-height: 50px;
     text-align: center;
+    margin-bottom: 42px;
   }
 
   .swiper-trainers {
@@ -2584,10 +2595,16 @@ button,
     padding-bottom: 51.4%;
   }
 
+  .reviews-wrapper {
+    padding-top: 44px;
+    padding-bottom: 67px;
+  }
+
   .reviews-wrapper h2 {
     font-size: 42px;
     line-height: 50px;
     text-align: center;
+    margin-bottom: 40px;
   }
 
   .swiper-reviews {
@@ -2604,9 +2621,14 @@ button,
     top: 328px;
   }
 
+  .advantages-wrapper {
+    padding: 194px 0 111px;
+  }
+
   .advantages-wrapper h2 {
     font-size: 42px;
     line-height: 50px;
+    margin-bottom: 42px;
   }
 
   .advantages {
@@ -2615,12 +2637,21 @@ button,
     -webkit-column-gap: unset;
     -moz-column-gap: unset;
     column-gap: unset;
-    row-gap: 22px;
+    row-gap: 45px;
+    -webkit-column-gap: 29px;
+    -moz-column-gap: 29px;
+    column-gap: 29px;
+    padding: 0 46px;
   }
 
   .advantages-item::before,
   .advantages-item::after {
     display: none;
+  }
+
+  .advantages-item__number {
+    font-size: 58px;
+    margin-top: -4px;
   }
 
   .advantages h4 {
@@ -2629,12 +2660,22 @@ button,
   }
 
   .advantages-item__main {
+    padding: 31px 137px 37px 134px;
+    margin: 0 auto;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/3;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
+  }
+
+  .advantages-item__main h4 {
+    margin: -6px 0 16px;
+  }
+
+  .advantages-item__span {
+    display: block;
   }
 
   .promotion-wrapper {
@@ -2658,13 +2699,34 @@ button,
 
   .main-info-wrapper {
     width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
-  .main-info-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+  .main-info {
+    padding: 40px 45px 45px 44px;
+  }
+
+  .main-info-wrapper p {
+    margin: 6px 0 64px;
+  }
+
+  .main-info__image {
+    height: 462px;
+    width: 399px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+
+  .main-info__image {
+    height: 299px;
+    width: 290px;
   }
 
   .additional-info {
@@ -2672,6 +2734,14 @@ button,
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     width: 100%;
+  }
+
+  .additional-info__item p {
+    margin-bottom: 49px;
+  }
+
+  .additional-info__item span {
+    display: block;
   }
 
   .form-wrapper {
@@ -2688,21 +2758,41 @@ button,
 
   .form__container {
     gap: 60px;
+    margin-bottom: 30px;
   }
 
   .contacts-block {
     width: 100%;
-    padding: 62px 132px;
+    padding: 62px 132px 66px;
+  }
+
+  .contacts-block::before {
+    top: 42%;
+    height: 127px;
   }
 
   .contacts-block h2 {
     font-size: 42px;
     line-height: 50px;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
   }
 
   .contacts-wrapper {
     gap: 88px;
+  }
+
+  .contacts-list {
+    gap: 20px;
+  }
+
+  .contacts-item h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .contacts-item p {
+    font-size: 18px;
+    line-height: 27px;
   }
 
   .section-wrapper {
@@ -2714,6 +2804,10 @@ button,
 
   .footer-wrapper {
     margin-left: unset;
+  }
+
+  .footer__logo {
+    margin-top: 8px;
   }
 
   .footer__logo svg {
@@ -2743,22 +2837,6 @@ button,
       background-image: url("../img/rod-discs-tablet@2x.webp");
     }
 }
-}
-
-@media (max-width: 1119px) {
-  .contacts-list {
-    gap: 19px;
-  }
-
-  .contacts-item h4 {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .contacts-item p {
-    font-size: 18px;
-    line-height: 27px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -2900,7 +2978,7 @@ button,
   }
 
   .subscription {
-    padding: 61px 0 72px;
+    padding: 70px 0 72px;
   }
 
   .subscription h2 {
@@ -2955,7 +3033,7 @@ button,
   }
 
   .promo-wrapper {
-    padding: 70px 0 70px;
+    padding: 70px 0 64px;
   }
 
   .promo {
@@ -2971,6 +3049,10 @@ button,
 
   .promo-info-wrapper h2 {
     margin-top: 4px;
+  }
+
+  .promo-info-span {
+    display: block;
   }
 
   .trainers-wrapper {
@@ -3007,12 +3089,13 @@ button,
   }
 
   .slider-card {
-    padding-bottom: 100%;
+    padding-bottom: 121%;
   }
 
   .reviews-wrapper h2 {
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 42px;
   }
 
   .swiper-reviews {
@@ -3020,11 +3103,11 @@ button,
   }
 
   .swiper-reviews-slide {
-    -webkit-column-gap: unset;
-    -moz-column-gap: unset;
-    column-gap: unset;
-    row-gap: 20px;
-    padding: 40px 25px;
+    -webkit-column-gap: 17px;
+    -moz-column-gap: 17px;
+    column-gap: 17px;
+    row-gap: 12px;
+    padding: 40px 22px 40px 26px;
   }
 
   .swiper-reviews-slide__avatar {
@@ -3034,6 +3117,10 @@ button,
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
+    width: 70px;
+    height: 70px;
+    margin-top: 0;
+    margin-left: 9px;
   }
 
   .swiper-reviews-slide h4 {
@@ -3044,6 +3131,7 @@ button,
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
+    margin: 9px 0 0 0;
   }
 
   .swiper-reviews-slide p {
@@ -3053,16 +3141,17 @@ button,
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
+    text-align: center;
   }
 
   .reviews-wrapper .swiper-button-prev {
     left: 6px;
-    top: 374px;
+    top: 290px;
   }
 
   .reviews-wrapper .swiper-button-next {
-    right: 0;
-    top: 363px;
+    right: 9px;
+    top: 281px;
   }
 
   .reviews-wrapper .swiper-button-prev::after {
@@ -3073,6 +3162,10 @@ button,
   .reviews-wrapper .swiper-button-next::after {
     width: 10px;
     height: 28px;
+  }
+
+  .advantages-wrapper {
+    padding: 135px 0 67px;
   }
 
   .advantages-wrapper h2 {
@@ -3086,7 +3179,7 @@ button,
     -webkit-column-gap: 60px;
     -moz-column-gap: 60px;
     column-gap: 60px;
-    row-gap: 50px;
+    row-gap: 34px;
     padding: 0;
   }
 
@@ -3096,7 +3189,8 @@ button,
     -webkit-column-gap: unset;
     -moz-column-gap: unset;
     column-gap: unset;
-    padding: 0 47px;
+    padding: 0 44px;
+    justify-items: center;
   }
 
   .advantages-item__number {
@@ -3106,6 +3200,20 @@ button,
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 7px;
   }
 
   .advantages h4 {
@@ -3115,6 +3223,7 @@ button,
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
+    margin-bottom: 2px;
   }
 
   .advantages p {
@@ -3124,6 +3233,7 @@ button,
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
+    text-align: center;
   }
 
   .advantages-item__main {
@@ -3131,7 +3241,12 @@ button,
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     grid-row: unset;
-    padding: 0;
+    padding: 42px 0;
+    width: 100%;
+  }
+
+  .promotion-wrapper {
+    padding: 69px 0 20px;
   }
 
   .promotion-wrapper h2 {
@@ -3139,9 +3254,60 @@ button,
     line-height: 38px;
   }
 
+  .main-info-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .main-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 47px;
+  }
+
+  .main-info__price {
+    margin: 2px 0 10px;
+    line-height: 70px;
+  }
+
+  .main-info-wrapper p {
+    margin: 2px 0 30px;
+    text-align: center;
+  }
+
   .additional-info {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .additional-info__item {
+    padding: 29px 35px 41px 35px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .additional-info__item h3 {
+    text-align: center;
+  }
+
+  .additional-info__item p {
+    margin-bottom: 26px;
+    text-align: center;
   }
 
   .form-wrapper {
@@ -3166,12 +3332,17 @@ button,
 
   .contacts-block {
     width: 100%;
-    padding: 62px 17px;
+    padding: 64px 17px 62px;
+  }
+
+  .contacts-block::before {
+    display: none;
   }
 
   .contacts-block h2 {
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 35px;
   }
 
   .contacts-wrapper {
@@ -3182,12 +3353,8 @@ button,
     gap: 20px;
   }
 
-  .contacts-wrapper::before {
-    display: none;
-  }
-
   .contacts-item h4 {
-    margin: 0 0 6px 0;
+    margin: 0 0 5px 0;
   }
 
   .footer-wrapper {

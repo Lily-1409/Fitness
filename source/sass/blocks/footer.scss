@@ -1,7 +1,6 @@
 .footer-wrapper {
   background-color: #030a1a;
   padding: 41px 0;
-  margin-left: -30px;
 
   @media (max-width: 1199px) {
     margin-left: unset;
@@ -25,7 +24,11 @@
 }
 
 .footer__logo {
-  margin-top: 8px;
+  margin-top: 10px;
+
+  @media (max-width: 1199px) {
+    margin-top: 8px;
+  }
 
   @media (max-width: 767px) {
     grid-column: 1/2;
@@ -48,7 +51,7 @@
 
 .footer__list {
   list-style-type: none;
-  margin: 5px 0 0 10px;
+  margin: 7px 0 0 9px;
   padding: 0;
 
   display: flex;

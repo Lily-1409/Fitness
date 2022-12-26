@@ -1,7 +1,7 @@
 .form-wrapper {
-  padding: 54px 168px 70px 88px;
+  padding: 54px 168px 70px 102px;
   background-color: $sapphire;
-  width: 49%;
+  width: 51%;
 
   @media (max-width: 1199px) {
     padding: 62px 162px 70px 132px;
@@ -24,7 +24,7 @@
 
   margin: 0;
   padding: 0;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 
   @media (max-width: 1199px) {
     font-weight: 700;
@@ -44,11 +44,12 @@
 .form__container {
   display: flex;
   gap: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   justify-content: space-between;
 
   @media (max-width: 1199px) {
     gap: 60px;
+    margin-bottom: 30px;
   }
 
   @media (max-width: 767px) {
