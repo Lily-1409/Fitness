@@ -1121,7 +1121,7 @@ button,
   margin-bottom: 8px;
 }
 
-.container--tabs {
+.tabs-container {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1137,7 +1137,7 @@ button,
   margin-bottom: 38px;
 }
 
-.container--tabs::after {
+.tabs-container::after {
   position: absolute;
   content: "";
   top: 97%;
@@ -1178,7 +1178,7 @@ button,
   gap: 40px;
 }
 
-.content-item {
+.content__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1194,15 +1194,15 @@ button,
   max-height: 448px;
 }
 
-.content-item:hover,
-.content-item:focus {
+.content__item:hover,
+.content__item:focus {
   border: 7px solid;
   border-image-slice: 1;
   border-width: 7px;
   border-image-source: linear-gradient(145deg, #d10a43 0%, #00359f 100%);
 }
 
-.content-item h3 {
+.content__item h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1240,7 +1240,7 @@ button,
   justify-content: center;
 }
 
-.content__price-workout--shadow {
+.content__shadow {
   position: absolute;
   content: "";
   bottom: -5%;
@@ -1274,8 +1274,8 @@ button,
   outline: none;
 }
 
-.content-item:hover .content__buy,
-.content-item:focus .content__buy,
+.content__item:hover .content__buy,
+.content__item:focus .content__buy,
 .content__buy:hover {
   color: #ffffff;
   border: 2px solid;
@@ -1857,7 +1857,7 @@ button,
   grid-row: 2/3;
 }
 
-.advantages-item__main {
+.advantages-item--main {
   background-color: #1c3374;
   padding: 49px 30px 34px 27px;
   display: -webkit-box;
@@ -1879,7 +1879,7 @@ button,
   margin-bottom: 16px;
 }
 
-.advantages-item__main .advantages-item__number--other {
+.advantages-item--main .advantages-item__number-other {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1890,7 +1890,7 @@ button,
   background-clip: unset;
 }
 
-.advantages-item__main h4 {
+.advantages-item--main h4 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1902,7 +1902,7 @@ button,
   margin: -2px 0 30px;
 }
 
-.advantages-item__main p {
+.advantages-item--main p {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1999,7 +1999,7 @@ button,
   text-decoration: underline;
 }
 
-.main-info__image img {
+.main-info-image img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -2534,7 +2534,7 @@ button,
     margin: 0 0 8px -14px;
   }
 
-  .container--tabs {
+  .tabs-container {
     gap: 53px;
     margin-bottom: 42px;
   }
@@ -2549,7 +2549,7 @@ button,
     padding: 0 117px;
   }
 
-  .content-item {
+  .content__item {
     padding: 59px 110px 60px;
   }
 
@@ -2730,7 +2730,7 @@ button,
     margin-bottom: 7px;
   }
 
-  .advantages-item__main {
+  .advantages-item--main {
     padding: 27px 137px 37px 134px;
     margin: 0 auto;
     -ms-grid-column: 1;
@@ -2742,7 +2742,7 @@ button,
     margin-bottom: 0;
   }
 
-  .advantages-item__main h4 {
+  .advantages-item--main h4 {
     margin: -6px 0 16px;
   }
 
@@ -2787,7 +2787,7 @@ button,
     margin: 17px 0 184px;
   }
 
-  .main-info__image {
+  .main-info-image {
     height: 299px;
     width: 290px;
   }
@@ -3073,7 +3073,7 @@ button,
     line-height: 38px;
   }
 
-  .container--tabs {
+  .tabs-container {
     gap: 45px;
     margin-bottom: 38px;
   }
@@ -3089,12 +3089,12 @@ button,
     gap: 33px;
   }
 
-  .content-item {
+  .content__item {
     padding: 41px 34px 49px 33px;
     max-height: 384px;
   }
 
-  .content-item h3 {
+  .content__item h3 {
     font-size: 22px;
     line-height: 24px;
   }
@@ -3114,7 +3114,7 @@ button,
     height: 33px;
   }
 
-  .content__price-workout--shadow {
+  .content__shadow {
     font-size: 80px;
     line-height: 120px;
   }
@@ -3345,7 +3345,7 @@ button,
     text-align: center;
   }
 
-  .advantages-item__main {
+  .advantages-item--main {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -3354,11 +3354,11 @@ button,
     width: 100%;
   }
 
-  .advantages-item__main .advantages-item__number--other {
+  .advantages-item--main .advantages-item__number-other {
     line-height: 1;
   }
 
-  .advantages-item__main h4 {
+  .advantages-item--main h4 {
     margin: -5px 0 9px;
   }
 
