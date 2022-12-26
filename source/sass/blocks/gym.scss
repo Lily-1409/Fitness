@@ -62,10 +62,11 @@
   padding: 0;
 
   @media (max-width: 1199px) {
+    letter-spacing: 0.02em;
     font-size: 42px;
     line-height: 50px;
 
-    margin: 0 0 -2px -5px;
+    margin: 0 0 -2px -21px;
   }
 
   @media (max-width: 767px) {
@@ -87,7 +88,7 @@
   margin: 0 0 40px 0;
 
   @media (max-width: 1199px) {
-    margin: 0 0 35px 0;
+    margin: 0 0 35px -10px;
   }
 
   @media (max-width: 767px) {

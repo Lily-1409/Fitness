@@ -1,5 +1,5 @@
 .promo-wrapper {
-  padding: 117px 0 111px;
+  padding: 117px 0 107px;
 
   @media (max-width: 1199px) {
     padding: 102px 0 100px;
@@ -24,6 +24,7 @@
 .promo-description {
   background-color: $torch-red;
   padding: 81px 77px 83px 76px;
+  width: 45%;
 
   @media (max-width: 1199px) {
     padding: 46px 44px;
@@ -31,6 +32,7 @@
 
   @media (max-width: 767px) {
     padding: 49px 44px 52px;
+    width: 100%;
   }
 }
 

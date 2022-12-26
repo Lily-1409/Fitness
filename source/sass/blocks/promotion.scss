@@ -2,11 +2,11 @@
   padding: 134px 0 50px;
 
   @media (max-width: 1199px) {
-    padding: 73px 0 50px;
+    padding: 72px 0 50px;
   }
 
   @media (max-width: 767px) {
-    padding: 69px 0 20px;
+    padding: 57px 0 20px;
   }
 }
 
@@ -29,6 +29,7 @@
     line-height: 50px;
     text-align: center;
     margin-bottom: 40px;
+    margin-left: -6px;
   }
 
   @media (max-width: 767px) {
@@ -56,7 +57,6 @@
   @media (max-width: 1199px) {
     width: 100%;
     flex-direction: row;
-    justify-content: space-between;
   }
 
   @media (max-width: 767px) {
@@ -65,11 +65,12 @@
 }
 
 .main-info {
-  padding: 34px 45px 45px 40px;
+  padding: 40px 45px 45px 44px;
   width: 50%;
 
   @media (max-width: 1199px) {
     padding: 40px 45px 45px 44px;
+    width: 41.3%;
   }
 
   @media (max-width: 767px) {
@@ -99,7 +100,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 70px;
-  line-height: normal;
+  line-height: 1;
   color: $color-default-white;
 
   @media (max-width: 767px) {
@@ -118,11 +119,11 @@
 
   margin: 0;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 19px;
   margin-bottom: 184px;
 
   @media (max-width: 1199px) {
-    margin: 6px 0 64px;
+    margin: 17px 0 184px;
   }
 
   @media (max-width: 767px) {
@@ -145,11 +146,11 @@
 
 .main-info__image {
 
-  @media (max-width: 1199px) {
-    height: 462px;
-    width: 399px;
-    flex: 0 0 auto;
-  }
+  // @media (max-width: 1199px) {
+  //   height: 462px;
+  //   width: 399px;
+  //   flex: 0 0 auto;
+  // }
 
   @media (max-width: 1199px) {
     height: 299px;
@@ -188,12 +189,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 16px 35px 27px 29px;
+  padding: 19px 35px 29px 29px;
 
   border: 7px solid;
   border-image-slice: 1;
   border-width: 7px;
   border-image-source: linear-gradient(145deg, #d10a43 0%, #00359f 100%);
+
+  @media (max-width: 1199px) {
+    padding: 17px 28px 29px;
+  }
 
   @media (max-width: 767px) {
     padding: 29px 35px 41px 35px;
@@ -228,7 +233,7 @@
 
   margin: 0;
   padding: 0;
-  margin-bottom: 73px;
+  margin-bottom: 72px;
 
   @media (max-width: 1199px) {
     margin-bottom: 49px;

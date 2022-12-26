@@ -1091,7 +1091,7 @@ button,
   -webkit-transform: translate(0, 17%);
   -ms-transform: translate(0, 17%);
   transform: translate(0, 17%);
-  width: 275px;
+  width: 286px;
   height: 412px;
   background-image: url("../img/rod-discs-desktop.png");
   background-repeat: no-repeat;
@@ -1286,7 +1286,7 @@ button,
 }
 
 .promo-wrapper {
-  padding: 117px 0 111px;
+  padding: 117px 0 107px;
 }
 
 .promo {
@@ -1302,6 +1302,7 @@ button,
 .promo-description {
   background-color: #ed0233;
   padding: 81px 77px 83px 76px;
+  width: 45%;
 }
 
 .promo-info-wrapper {
@@ -1465,6 +1466,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  top: 52%;
 }
 
 .swiper-button-prev,
@@ -1547,7 +1549,7 @@ button,
   height: 100%;
   width: 100%;
   overflow-y: auto;
-  padding: 54px 27px 0 31px;
+  padding: 50px 27px 0 31px;
   display: none;
 }
 
@@ -1595,7 +1597,7 @@ button,
 }
 
 .reviews-wrapper {
-  padding: 67px 0 121px;
+  padding: 65px 0 119px;
   position: relative;
 }
 
@@ -1683,6 +1685,16 @@ button,
   grid-row: 2/3;
 }
 
+.reviews-wrapper button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  top: 54%;
+}
+
 .reviews-wrapper .swiper-button-prev,
 .reviews-wrapper .swiper-button-next {
   border: none;
@@ -1690,13 +1702,11 @@ button,
 }
 
 .reviews-wrapper .swiper-button-prev {
-  right: 344px;
-  top: 278px;
+  left: 25%;
 }
 
 .reviews-wrapper .swiper-button-next {
-  right: 344px;
-  top: 278px;
+  right: 25%;
 }
 
 .reviews-wrapper .swiper-button-prev::after {
@@ -1744,19 +1754,19 @@ button,
   -webkit-column-gap: 56px;
   -moz-column-gap: 56px;
   column-gap: 56px;
-  row-gap: 155px;
+  row-gap: 146px;
   position: relative;
   margin: 0 auto;
   width: 100%;
   max-width: 1160px;
-  padding: 0 73px;
+  padding: 0 73px 0 79px;
 }
 
 .advantages-item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr auto;
-  grid-template-columns: 1fr auto;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
   column-gap: 30px;
@@ -1818,10 +1828,11 @@ button,
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
-  line-height: normal;
+  line-height: 33px;
   color: #102654;
   margin: 0;
   padding: 0;
+  margin-top: -5px;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -1839,6 +1850,7 @@ button,
   color: #102654;
   margin: 0;
   padding: 0;
+  margin-top: -5px;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -1943,7 +1955,7 @@ button,
 }
 
 .main-info {
-  padding: 34px 45px 45px 40px;
+  padding: 40px 45px 45px 44px;
   width: 50%;
 }
 
@@ -1962,7 +1974,7 @@ button,
   font-style: normal;
   font-weight: 700;
   font-size: 70px;
-  line-height: normal;
+  line-height: 1;
   color: #ffffff;
 }
 
@@ -1975,7 +1987,7 @@ button,
   color: #ffffff;
   margin: 0;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 19px;
   margin-bottom: 184px;
 }
 
@@ -2021,7 +2033,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 16px 35px 27px 29px;
+  padding: 19px 35px 29px 29px;
   border: 7px solid;
   border-image-slice: 1;
   border-width: 7px;
@@ -2049,7 +2061,7 @@ button,
   color: #1c3374;
   margin: 0;
   padding: 0;
-  margin-bottom: 73px;
+  margin-bottom: 72px;
 }
 
 .additional-info__link {
@@ -2088,7 +2100,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -2443,13 +2455,14 @@ button,
   }
 
   .gym-descripton h2 {
+    letter-spacing: 0.02em;
     font-size: 42px;
     line-height: 50px;
-    margin: 0 0 -2px -5px;
+    margin: 0 0 -2px -21px;
   }
 
   .gym-descripton span {
-    margin: 0 0 35px 0;
+    margin: 0 0 35px -10px;
   }
 
   .gym-descripton p {
@@ -2502,10 +2515,10 @@ button,
 
   .subscription-wrapper::before {
     background-image: url("../img/rod-discs-tablet.jpg");
-    -webkit-transform: translate(0, 24%);
-    -ms-transform: translate(0, 24%);
-    transform: translate(0, 24%);
-    width: 332px;
+    -webkit-transform: translate(0, 23%);
+    -ms-transform: translate(0, 23%);
+    transform: translate(0, 23%);
+    width: 346px;
   }
 
 @supports (background-image: url("../img/rod-discs-tablet.webp")) {
@@ -2521,11 +2534,17 @@ button,
   .subscription h2 {
     font-size: 42px;
     line-height: 50px;
+    letter-spacing: 0.02em;
+    margin: 0 0 8px -14px;
   }
 
   .container--tabs {
-    gap: 54px;
+    gap: 53px;
     margin-bottom: 42px;
+  }
+
+  .tab {
+    font-size: 18px;
   }
 
   .content--active {
@@ -2599,20 +2618,51 @@ button,
     font-size: 42px;
     line-height: 50px;
     text-align: center;
-    margin-bottom: 42px;
+    margin-bottom: 31px;
   }
 
   .swiper-trainers {
     margin: 0 56px;
   }
 
+  .trainers-wrapper button {
+    top: 61%;
+  }
+
+  .swiper-button-prev {
+    top: 62%;
+    left: 40px;
+  }
+
+  .swiper-button-next {
+    top: 62%;
+    right: 40px;
+  }
+
   .slider-card {
-    padding-bottom: 51.4%;
+    padding-bottom: 51.9%;
+  }
+
+  .slider-card h4 {
+    bottom: 23px;
+    left: 51%;
+  }
+
+  .slider-inner-layer {
+    padding: 52px 27px 0 32px;
+  }
+
+  .slider-card h5 {
+    margin-left: -10px;
+  }
+
+  .slider-card p {
+    margin-left: -10px;
   }
 
   .reviews-wrapper {
-    padding-top: 44px;
-    padding-bottom: 67px;
+    padding-top: 43px;
+    padding-bottom: 69px;
   }
 
   .reviews-wrapper h2 {
@@ -2626,24 +2676,35 @@ button,
     margin: 0 56px;
   }
 
+  .swiper-reviews-slide {
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    padding: 53px 54px 58px 62px;
+  }
+
+  .reviews-wrapper button {
+    top: 57%;
+  }
+
   .reviews-wrapper .swiper-button-prev {
-    left: 36px;
-    top: 338px;
+    left: 5%;
   }
 
   .reviews-wrapper .swiper-button-next {
-    right: 29px;
-    top: 328px;
+    right: 5%;
   }
 
   .advantages-wrapper {
-    padding: 194px 0 111px;
+    padding: 193px 0 111px;
   }
 
   .advantages-wrapper h2 {
     font-size: 42px;
     line-height: 50px;
-    margin-bottom: 42px;
+    margin-bottom: 41px;
+    letter-spacing: 0.02em;
+    margin-left: -25px;
   }
 
   .advantages {
@@ -2666,12 +2727,14 @@ button,
 
   .advantages-item__number {
     font-size: 58px;
-    margin-top: -4px;
+    margin-top: -5px;
   }
 
   .advantages h4 {
     font-size: 20px;
     line-height: 30px;
+    margin-top: 0px;
+    margin-bottom: 7px;
   }
 
   .advantages-item__main {
@@ -2695,7 +2758,7 @@ button,
   }
 
   .promotion-wrapper {
-    padding: 73px 0 50px;
+    padding: 72px 0 50px;
   }
 
   .promotion-wrapper h2 {
@@ -2703,6 +2766,7 @@ button,
     line-height: 50px;
     text-align: center;
     margin-bottom: 40px;
+    margin-left: -6px;
   }
 
   .promotion {
@@ -2719,25 +2783,15 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
   }
 
   .main-info {
     padding: 40px 45px 45px 44px;
+    width: 41.3%;
   }
 
   .main-info-wrapper p {
-    margin: 6px 0 64px;
-  }
-
-  .main-info__image {
-    height: 462px;
-    width: 399px;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
+    margin: 17px 0 184px;
   }
 
   .main-info__image {
@@ -2750,6 +2804,10 @@ button,
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     width: 100%;
+  }
+
+  .additional-info__item {
+    padding: 17px 28px 29px;
   }
 
   .additional-info__item p {
@@ -3081,6 +3139,7 @@ button,
 
   .promo-description {
     padding: 49px 44px 52px;
+    width: 100%;
   }
 
   .promo-info-wrapper h2 {
@@ -3098,10 +3157,25 @@ button,
   .trainers-wrapper h2 {
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 42px;
   }
 
   .swiper-trainers {
     margin: 0 32px 0 32px;
+  }
+
+  .trainers-wrapper button {
+    top: 55%;
+  }
+
+  .swiper-button-prev {
+    top: 55%;
+    left: 8px;
+  }
+
+  .swiper-button-next {
+    top: 55%;
+    right: 8px;
   }
 
   .swiper-button-prev::after {
@@ -3122,10 +3196,18 @@ button,
     padding: 41px 27px 0 10px;
   }
 
+  .slider-card h5 {
+    margin-left: 15px;
+  }
+
+  .slider-card p {
+    margin-left: 15px;
+  }
+
   .reviews-wrapper h2 {
     font-size: 32px;
     line-height: 38px;
-    margin-bottom: 42px;
+    margin-bottom: 43px;
   }
 
   .swiper-reviews {
@@ -3136,8 +3218,8 @@ button,
     -webkit-column-gap: 17px;
     -moz-column-gap: 17px;
     column-gap: 17px;
-    row-gap: 12px;
-    padding: 40px 22px 40px 26px;
+    row-gap: 14px;
+    padding: 40px 22px 37px 26px;
   }
 
   .swiper-reviews-slide__avatar {
@@ -3174,14 +3256,12 @@ button,
     text-align: center;
   }
 
-  .reviews-wrapper .swiper-button-prev {
-    left: 6px;
-    top: 290px;
+  .reviews-wrapper button {
+    top: 55%;
   }
 
-  .reviews-wrapper .swiper-button-next {
-    right: 9px;
-    top: 281px;
+  .reviews-wrapper .swiper-button-prev {
+    left: 1%;
   }
 
   .reviews-wrapper .swiper-button-prev::after {
@@ -3195,12 +3275,13 @@ button,
   }
 
   .advantages-wrapper {
-    padding: 81px 0 67px;
+    padding: 100px 0 67px;
   }
 
   .advantages-wrapper h2 {
     font-size: 32px;
     line-height: 38px;
+    margin-left: -15px;
   }
 
   .advantages {
@@ -3209,7 +3290,7 @@ button,
     -webkit-column-gap: 60px;
     -moz-column-gap: 60px;
     column-gap: 60px;
-    row-gap: 34px;
+    row-gap: 37px;
     padding: 0;
   }
 
@@ -3253,7 +3334,7 @@ button,
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
   }
 
   .advantages p {
@@ -3271,13 +3352,20 @@ button,
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     grid-row: unset;
-    padding: 37px 0 39px;
-    margin-top: 10px;
+    padding: 45px 0 44px;
     width: 100%;
   }
 
+  .advantages-item__main .advantages-item__number {
+    line-height: 1;
+  }
+
+  .advantages-item__main h4 {
+    margin: -12px 0 9px;
+  }
+
   .promotion-wrapper {
-    padding: 69px 0 20px;
+    padding: 57px 0 20px;
   }
 
   .promotion-wrapper h2 {
@@ -3359,6 +3447,11 @@ button,
     flex-direction: column;
     gap: 30px;
     margin-bottom: 40px;
+  }
+
+  .form__name,
+  .form__phone {
+    width: 100%;
   }
 
   .contacts-block {
