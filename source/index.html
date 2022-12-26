@@ -6,9 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Описание проекта">
     <title>Fitness</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+      <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff" as="font" type="font/woff" crossorigin>
+      <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="fonts/AlumniSans-SemiBold.woff" as="font" type="font/woff" crossorigin>
+      <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" as="font" type="font/woff" crossorigin>
+      <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="fonts/RobotoCondensed-Light.woff" as="font" type="font/woff" crossorigin>
+      <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" as="font" type="font/woff" crossorigin>
+      <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -58,9 +66,7 @@
               <div class="gym-image__wrapper">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-full.webp 1x, img/gym-full@2x.webp 2x">
-                  <source media="(max-width: 767px)" srcset="img/gym-full.jpg 1x, img/gym-full@2x.jpg 2x">
                   <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
-                  <source media="(max-width: 1199px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x">
                   <source type="image/webp" srcset="./img/gym-full.webp 1x, ./img/gym-full@2x.webp 2x">
                   <img src="./img/gym-full.jpg" width="660" height="401" alt="Изображение спортзала">
                 </picture>
@@ -69,9 +75,7 @@
                 <a class="gym-video__link" href="https://www.youtube.com/embed/9TZXsZItgdw">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-video-mobile.webp 1x, img/gym-video-mobile@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/gym-video-mobile.jpg 1x, img/gym-video-mobile@2x.jpg 2x">
                     <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-video-tablet.webp 1x, img/gym-video-tablet@2x.webp 2x">
-                    <source media="(max-width: 1199px)" srcset="img/gym-video-tablet.jpg 1x, img/gym-video-tablet@2x.jpg 2x">
                     <source type="image/webp" srcset="./img/gym-video-desktop.webp 1x, ./img/gym-video-desktop@2x.webp 2x">
                     <img class="gym-video__media" src="./img/gym-video-desktop.jpg" srcset="./img/gymp-video-desktop@2x.jpg" width="364" height="228" alt="Изображение заставки видео">
                   </picture>
@@ -83,18 +87,16 @@
             </div>
           </div>
         </section>
-        <section class="subscription-wrapper">
+        <section class="subscription-wrapper" id="subscription">
           <div class="container">
             <div class="subscription">
               <h2>Абонементы</h2>
               <ul class="tabs-container">
-                <!-- <ul class="container--tabs"> -->
                 <li class="tab tab--active" tabindex="0">1 месяц</li>
                 <li class="tab" tabindex="0">6 месяцев</li>
                 <li class="tab" tabindex="0">12 месяцев</li>
               </ul>
               <div class="content-container">
-                <!-- <div class="container--content"> -->
                 <div class="content content--active">
                   <div class="content__item" tabindex="0">
                     <h3>C тренером</h3>
@@ -103,7 +105,7 @@
                       <svg width="30" height="42"><use xlink:href="./img/sprite/sprite.svg#rouble-icon"></use></svg>
                       <span class="content__shadow">5000</span>
                     </span>
-                    <a class="content__buy btn" href="#">Купить абонемент</a>
+                    <a class="content__buy btn" href="#" target="_blank">Купить абонемент</a>
                   </div>
                   <div class="content__item" tabindex="0">
                     <h3>Дневной</h3>
@@ -112,7 +114,7 @@
                       <svg width="30" height="42"><use xlink:href="./img/sprite/sprite.svg#rouble-icon"></use></svg>
                       <span class="content__shadow">1700</span>
                     </span>
-                    <a class="content__buy btn" href="#">Купить абонемент</a>
+                    <a class="content__buy btn" href="#" target="_blank">Купить абонемент</a>
                   </div>
                   <div class="content__item" tabindex="0">
                     <h3>Полный день</h3>
@@ -121,7 +123,7 @@
                       <svg width="30" height="42"><use xlink:href="./img/sprite/sprite.svg#rouble-icon"></use></svg>
                       <span class="content__shadow">2700</span>
                     </span>
-                    <a class="content__buy btn" href="#">Купить абонемент</a>
+                    <a class="content__buy btn" href="#" target="_blank">Купить абонемент</a>
                   </div>
                 </div>
                 <div class="content">
@@ -132,7 +134,7 @@
                       <svg width="30" height="42"><use xlink:href="./img/sprite/sprite.svg#rouble-icon"></use></svg>
                       <span class="content__shadow">30000</span>
                     </span>
-                    <a class="content__buy btn" href="#">Купить абонемент</a>
+                    <a class="content__buy btn" href="#" target="_blank">Купить абонемент</a>
                   </div>
                   <div class="content__item" tabindex="0">
                     <h3>Дневной</h3>
@@ -150,7 +152,7 @@
                       <svg width="30" height="42"><use xlink:href="./img/sprite/sprite.svg#rouble-icon"></use></svg>
                       <span class="content__shadow">16200</span>
                     </span>
-                    <a class="content__buy btn" href="#">Купить абонемент</a>
+                    <a class="content__buy btn" href="#" target="_blank">Купить абонемент</a>
                   </div>
                 </div>
                 <div class="content">
@@ -170,7 +172,7 @@
                       <svg width="30" height="42"><use xlink:href="./img/sprite/sprite.svg#rouble-icon"></use></svg>
                       <span class="content__shadow">1700</span>
                     </span>
-                    <a class="content__buy btn" href="#">Купить абонемент</a>
+                    <a class="content__buy btn" href="#" target="_blank">Купить абонемент</a>
                   </div>
                   <div class="content__item" tabindex="0">
                     <h3>Полный день</h3>
@@ -179,7 +181,7 @@
                       <svg width="30" height="42"><use xlink:href="./img/sprite/sprite.svg#rouble-icon"></use></svg>
                       <span class="content__shadow">2700</span>
                     </span>
-                    <a class="content__buy btn" href="#">Купить абонемент</a>
+                    <a class="content__buy btn" href="#" target="_blank">Купить абонемент</a>
                   </div>
                 </div>
               </div>
@@ -206,16 +208,14 @@
                   </div>
                 </div>
                 <p>Ежегодные соревнования по CrossFit</p>
-                <a class="promo-description__button btn" href="#">Заполнить заявку</a>
+                <a class="promo-description__button btn" href="#" target="_blank">Заполнить заявку</a>
               </div>
               <div class="promo-image">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/promo-mobile.webp 1x, img/promo-mobile@2x.webp 2x">
-                  <source media="(max-width: 767px)" srcset="img/promo-mobile.jpg 1x, img/promo-mobile@2x.jpg 2x">
                   <source type="image/webp" media="(max-width: 1199px)" srcset="img/promo-tablet.webp 1x, img/promo-tablet@2x.webp 2x">
-                  <source media="(max-width: 1199px)" srcset="img/promo-tablet.jpg 1x, img/promo-tablet@2x.jpg 2x">
                   <source type="image/webp" srcset="./img/promo-desktop.webp 1x, ./img/promo-desktop@2x.webp 2x">
-                  <img class="promo-image__image" src="./img/promo-desktop.jpg" width="660" height="500" alt="Фото тренера">
+                  <img class="promo-image__image" src="./img/promo-desktop.jpg" srcset="./img/promo-desktop@2x.jpg 2x" width="660" height="500" alt="Фото тренера">
                 </picture>
               </div>
             </div>
@@ -229,7 +229,10 @@
               <div class="swiper-slide slider-card" tabindex="0">
                 <h4>Анна Павлова</h4>
                 <div class="slider-image-wrapper">
-                  <img src="./img/trainer-1-desktop.jpg" width="260" height="294" alt="Фото тренера">
+                  <picture>
+                    <source type="image/webp" srcset="./img/trainer-1-desktop.webp 1x, ./img/trainer-1-desktop@2x.webp 2x">
+                    <img src="./img/trainer-1-desktop.jpg" srcset="./img/trainer-1-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера">
+                  </picture>
                 </div>
                 <div class="slider-inner-layer">
                   <h5>Анна Павлова</h5>
@@ -244,7 +247,10 @@
               <div class="swiper-slide slider-card" tabindex="0">
                 <h4>Алексей Лавров</h4>
                 <div class="slider-image-wrapper">
-                  <img src="./img/trainer-2-desktop.jpg" width="260" height="294" alt="Фото тренера">
+                  <picture>
+                    <source type="image/webp" srcset="./img/trainer-2-desktop.webp 1x, ./img/trainer-2-desktop@2x.webp 2x">
+                    <img src="./img/trainer-2-desktop.jpg" srcset="./img/trainer-2-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера">
+                  </picture>
                 </div>
                 <div class="slider-inner-layer">
                   <h5>Алексей Лавров</h5>
@@ -259,7 +265,10 @@
               <div class="swiper-slide slider-card" tabindex="0">
                 <h4>Александр Пашков</h4>
                 <div class="slider-image-wrapper">
-                  <img src="./img/trainer-3-desktop.jpg" width="260" height="294" alt="Фото тренера">
+                  <picture>
+                    <source type="image/webp" srcset="./img/trainer-3-desktop.webp 1x, ./img/trainer-3-desktop@2x.webp 2x">
+                    <img src="./img/trainer-3-desktop.jpg" srcset="./img/trainer-3-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера">
+                  </picture>
                 </div>
                 <div class="slider-inner-layer">
                   <h5>Александр Пашков</h5>
@@ -274,7 +283,10 @@
               <div class="swiper-slide slider-card" tabindex="0">
                 <h4>Мария Кетова</h4>
                 <div class="slider-image-wrapper">
-                  <img src="./img/trainer-4-desktop.jpg" width="260" height="294" alt="Фото тренера">
+                  <picture>
+                    <source type="image/webp" srcset="./img/trainer-4-desktop.webp 1x, ./img/trainer-4-desktop@2x.webp 2x">
+                    <img src="./img/trainer-4-desktop.jpg" srcset="./img/trainer-4-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера">
+                  </picture>
                 </div>
                 <div class="slider-inner-layer">
                   <h5>Мария Кетова</h5>
@@ -289,7 +301,10 @@
               <div class="swiper-slide slider-card" tabindex="0">
                 <h4>Александр Пашков</h4>
                 <div class="slider-image-wrapper">
-                  <img src="./img/trainer-2-desktop.jpg" width="260" height="294" alt="Фото тренера">
+                  <picture>
+                    <source type="image/webp" srcset="./img/trainer-1-desktop.webp 1x, ./img/trainer-1-desktop@2x.webp 2x">
+                    <img src="./img/trainer-1-desktop.jpg" srcset="./img/trainer-1-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера">
+                  </picture>
                 </div>
                 <div class="slider-inner-layer">
                   <h5>Александр Пашков</h5>
@@ -304,7 +319,10 @@
               <div class="swiper-slide slider-card" tabindex="0">
                 <h4>Александр Пашков</h4>
                 <div class="slider-image-wrapper">
-                  <img src="./img/trainer-3-desktop.jpg" width="260" height="294" alt="Фото тренера">
+                  <picture>
+                    <source type="image/webp" srcset="./img/trainer-2-desktop.webp 1x, ./img/trainer-2-desktop@2x.webp 2x">
+                    <img src="./img/trainer-2-desktop.jpg" srcset="./img/trainer-2-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера">
+                  </picture>
                 </div>
                 <div class="slider-inner-layer">
                   <h5>Александр Пашков</h5>
@@ -319,7 +337,10 @@
               <div class="swiper-slide slider-card">
                 <h4>Александр Пашков</h4>
                 <div class="slider-image-wrapper">
-                  <img src="./img/trainer-4-desktop.jpg" width="260" height="294" alt="Фото тренера">
+                  <picture>
+                    <source type="image/webp" srcset="./img/trainer-3-desktop.webp 1x, ./img/trainer-3-desktop@2x.webp 2x">
+                    <img src="./img/trainer-3-desktop.jpg" srcset="./img/trainer-3-desktop@2x.jpg 2x" width="260" height="294" alt="Фото тренера">
+                  </picture>
                 </div>
                 <div class="slider-inner-layer">
                   <h5>Александр Пашков</h5>
@@ -386,10 +407,15 @@
                   <span class="main-info__year">Год</span>
                   <span class="main-info__price">4999</span>
                   <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
-                  <a href="#" class="main-info__more">Подробнее</a>
+                  <a href="#" class="main-info__more" target="_blank">Подробнее</a>
                 </div>
                 <div class="main-info-image">
-                  <img src="./img/promotion-desktop.jpg" width="280" height="462" alt="Акция">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/promotion-mobile.webp 1x, img/promotion-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/promotion-tablet.webp 1x, img/promotion-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/promotion-desktop.webp 1x, ./img/promotion-desktop@2x.webp 2x">
+                    <img src="./img/promotion-desktop.jpg" srcset="./img/promotion-desktop@2x.jpg 2x" width="280" height="462" alt="Акция">
+                  </picture>
                 </div>
               </div>
               <ul class="additional-info">
@@ -398,14 +424,14 @@
                     <h3>Месяц бесплатно</h3>
                     <p>Приведи друга, получи <span>абонемент в подарок</span></p>
                   </div>
-                  <a class="additional-info__link" href="#">Подробнее</a>
+                  <a class="additional-info__link" href="#" target="_blank">Подробнее</a>
                 </li>
                 <li class="additional-info__item">
                   <div class="additional-info__item-wrapper">
                     <h3>Скидка 20%</h3>
                     <p>Корпоративный фитнес с командой</p>
                   </div>
-                  <a class="additional-info__link" href="#">Подробнее</a></li>
+                  <a class="additional-info__link" href="#" target="_blank">Подробнее</a></li>
               </ul>
             </div>
           </div>
@@ -419,7 +445,10 @@
                 <div class="swiper-slide" tabindex="0">
                   <div class="swiper-reviews-slide">
                     <div class="swiper-reviews-slide__avatar">
-                      <img src="./img/trainer-1-desktop.jpg" width="260" height="294" alt="Фото тренера">
+                      <picture>
+                        <source type="image/webp" srcset="./img/avatar.webp 1x, ./img/avatar@2x.webp 2x">
+                        <img src="./img/avatar.jpg" srcset="./img/avatar@2x.jpg 2x" width="280" height="462" alt="Акция">
+                      </picture>
                     </div>
                     <h4>Анна Орлова</h4>
                     <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
@@ -428,7 +457,10 @@
                 <div class="swiper-slide" tabindex="0">
                   <div class="swiper-reviews-slide">
                     <div class="swiper-reviews-slide__avatar">
-                      <img src="./img/trainer-1-desktop.jpg" width="260" height="294" alt="Фото тренера">
+                      <picture>
+                        <source type="image/webp" srcset="./img/avatar.webp 1x, ./img/avatar@2x.webp 2x">
+                        <img src="./img/avatar.jpg" srcset="./img/avatar@2x.jpg 2x" width="280" height="462" alt="Акция">
+                      </picture>
                     </div>
                     <h4>Анна Орлова</h4>
                     <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
@@ -437,7 +469,10 @@
                 <div class="swiper-slide" tabindex="0">
                   <div class="swiper-reviews-slide">
                     <div class="swiper-reviews-slide__avatar">
-                      <img src="./img/trainer-1-desktop.jpg" width="260" height="294" alt="Фото тренера">
+                      <picture>
+                        <source type="image/webp" srcset="./img/avatar.webp 1x, ./img/avatar@2x.webp 2x">
+                        <img src="./img/avatar.jpg" srcset="./img/avatar@2x.jpg 2x" width="280" height="462" alt="Акция">
+                      </picture>
                     </div>
                     <h4>Анна Орлова</h4>
                     <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
@@ -523,21 +558,21 @@
             </ul>
             <ul class="footer__social-networks">
               <li class="footer__social-networks-item">
-                <a href="">
+                <a href="https://vk.com/">
                   <svg width="20" height="20">
                     <use xlink:href="./img/sprite/sprite.svg#vk-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__social-networks-item">
-                <a href="">
+                <a href="https://ok.ru/">
                   <svg width="20" height="20">
                     <use xlink:href="./img/sprite/sprite.svg#ok-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__social-networks-item">
-                <a href="">
+                <a href="https://www.reddit.com/">
                   <svg width="20" height="20">
                     <use xlink:href="./img/sprite/sprite.svg#reddit-icon"></use>
                   </svg>

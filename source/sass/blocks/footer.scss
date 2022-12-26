@@ -24,16 +24,16 @@
 }
 
 .footer__logo {
-  margin-top: 10px;
+  margin-top: 1px;
 
   @media (max-width: 1199px) {
-    margin-top: 8px;
+    margin-top: -2px;
   }
 
   @media (max-width: 767px) {
     grid-column: 1/2;
     grid-row: 1/2;
-    margin: 0 0 7px -11px;
+    margin: -20px 0 7px 0;
   }
 }
 
@@ -44,8 +44,8 @@
   }
 
   @media (max-width: 767px) {
-    width: 91px;
-    height: 25px;
+    width: 67px;
+    height: 16px;
   }
 }
 

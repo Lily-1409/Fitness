@@ -181,10 +181,34 @@
 
 .slider-card:hover .slider-inner-layer {
   display: block;
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .slider-card:hover h4 {
   display: none;
+
+  @media (max-width: 1199px) {
+    display: block;
+  }
+}
+
+.slider-card:active .slider-inner-layer {
+  display: none;
+
+  @media (max-width: 1199px) {
+    display: block;
+  }
+}
+
+.slider-card:active h4 {
+  display: block;
+
+  @media (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .slider-inner-layer {

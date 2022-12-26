@@ -1,5 +1,5 @@
 .header {
-  padding: 30px 0 50px;
+  padding: 30px 0 52px;
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 
   @media (max-width: 1199px) {
@@ -14,8 +14,11 @@
 }
 
 .contacts {
-  display: flex;
   justify-content: space-between;
+  display: inline-flex;
+  width: 100%;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
 
   @media (max-width: 1199px) {
     margin-top: 4px;
@@ -27,14 +30,10 @@
 }
 
 .contacts__logo {
-  margin-top: 10px;
-
-  @media (max-width: 1199px) {
-    margin-top: 7px;
-  }
+  margin-top: -3px;
 
   @media (max-width: 767px) {
-    margin-top: 0;
+    margin-top: -9px;
   }
 }
 
@@ -77,11 +76,11 @@
 
 .about {
   display: flex;
-  margin-top: -39px;
+  margin-top: -28px;
   margin-left: 18px;
 
   @media (max-width: 1199px) {
-    margin-top: 0;
+    margin-top: 10px;
     margin-left: 0;
     justify-content: space-between;
   }
