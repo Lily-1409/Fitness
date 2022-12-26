@@ -5,7 +5,7 @@
 
   @media (max-width: 1199px) {
     padding: 62px 162px 70px 132px;
-    width:100%;
+    width: 100%;
   }
 
   @media (max-width: 767px) {
@@ -59,6 +59,15 @@
   }
 }
 
+.form__name,
+.form__phone {
+  width: 191px;
+
+  @media (max-width: 1199px) {
+    width: 208px;
+  }
+}
+
 .form__name label,
 .form__phone label {
   display: none;
@@ -72,6 +81,7 @@
   height: 30px;
   flex: 0 0 auto;
   color: $color-default-white;
+  width: 100%;
 }
 
 .form__name input::-webkit-input-placeholder,

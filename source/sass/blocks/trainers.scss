@@ -1,8 +1,8 @@
 .trainers-wrapper {
-  padding: 0 0 90px 0;
+  padding: 0 67px 90px 65px;
   margin: 0 auto;
   width: 100%;
-  max-width: 1160px;
+  max-width: 1291px;
   position: relative;
 
   @media (max-width: 1199px) {
@@ -10,7 +10,7 @@
   }
 
   @media (max-width: 767px) {
-    padding: 0 15px;
+    padding: 0 15px 35px;
   }
 }
 
@@ -49,8 +49,14 @@
   }
 
   @media (max-width: 767px) {
-    margin: 0 32px;
+    margin: 0 32px 0 32px;
   }
+}
+
+.trainers-wrapper button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper-button-prev,
@@ -59,34 +65,35 @@
   background-color: transparent;
 }
 
-.swiper-button-prev {
-  left: -64px;
+// .swiper-button-prev {
+  // left: 3px;
+  // top: 52%;
 
-  @media (max-width: 1199px) {
-    left: 39px;
-    top: 244px;
-  }
+  // @media (max-width: 1199px) {
+  //   left: 39px;
+  //   top: 244px;
+  // }
 
-  @media (max-width: 767px) {
-    left: 6px;
-    top: 208px;
-  }
-}
+  // @media (max-width: 767px) {
+  //   left: 6px;
+  //   top: 216px;
+  // }
+// }
 
-.swiper-button-next {
-  right: -60px;
-  transform: translate(8%, 23%);
+// .swiper-button-next {
+//   right: 7px;
+//   transform: translate(8%, 23%);
 
-  @media (max-width: 1199px) {
-    right: 28px;
-    top: 233px;
-  }
+//   @media (max-width: 1199px) {
+//     right: 28px;
+//     top: 233px;
+//   }
 
-  @media (max-width: 767px) {
-    right: 0px;
-    top: 200px;
-  }
-}
+//   @media (max-width: 767px) {
+//     right: 11px;
+//     top: 208px;
+//   }
+// }
 
 .swiper-button-prev::after {
   content: '';
@@ -112,24 +119,18 @@
   }
 }
 
-// .slider-image-wrapper {
-//   width: 260px;
-//   height: 294px;
-
-//   @media (max-width: 1199px) {
-//     width: 268px;
-//     height: 294px;
-//   }
-
-//   @media (max-width: 767px) {
-//     width: 226px;
-//     height: 274px;
-//   }
-// }
+.slider-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .slider-image-wrapper img {
   width: 100%;
   height: 100%;
+  // object-fit: cover;
 }
 
 .slider-card {
@@ -154,6 +155,7 @@
   font-size: 18px;
   line-height: 27px;
   color: $color-default-white;
+  z-index: 10;
 
   margin: 0;
   padding: 0;
@@ -187,6 +189,10 @@
   overflow-y: auto;
   padding: 54px 27px 0 31px;
   display: none;
+
+  @media (max-width: 767px) {
+    padding: 41px 27px 0 10px;
+  }
 }
 
 .slider-card p {

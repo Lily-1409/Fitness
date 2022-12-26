@@ -1088,10 +1088,10 @@ button,
   position: absolute;
   bottom: 0;
   right: 0;
-  -webkit-transform: translate(4%, 17%);
-  -ms-transform: translate(4%, 17%);
-  transform: translate(4%, 17%);
-  width: 298px;
+  -webkit-transform: translate(0, 17%);
+  -ms-transform: translate(0, 17%);
+  transform: translate(0, 17%);
+  width: 275px;
   height: 412px;
   background-image: url("../img/rod-discs-desktop.png");
   background-repeat: no-repeat;
@@ -1286,7 +1286,7 @@ button,
 }
 
 .promo-wrapper {
-  padding: 117px 0 106px;
+  padding: 117px 0 111px;
 }
 
 .promo {
@@ -1430,10 +1430,10 @@ button,
 }
 
 .trainers-wrapper {
-  padding: 0 0 90px 0;
+  padding: 0 67px 90px 65px;
   margin: 0 auto;
   width: 100%;
-  max-width: 1160px;
+  max-width: 1291px;
   position: relative;
 }
 
@@ -1455,21 +1455,22 @@ button,
   overflow: hidden;
 }
 
+.trainers-wrapper button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   border: none;
   background-color: transparent;
-}
-
-.swiper-button-prev {
-  left: -64px;
-}
-
-.swiper-button-next {
-  right: -60px;
-  -webkit-transform: translate(8%, 23%);
-  -ms-transform: translate(8%, 23%);
-  transform: translate(8%, 23%);
 }
 
 .swiper-button-prev::after {
@@ -1484,6 +1485,14 @@ button,
   background-image: url("../../img/svg/arrow-next.svg");
   width: 18px;
   height: 32px;
+}
+
+.slider-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .slider-image-wrapper img {
@@ -1505,6 +1514,7 @@ button,
   font-size: 18px;
   line-height: 27px;
   color: #ffffff;
+  z-index: 10;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -1680,13 +1690,13 @@ button,
 }
 
 .reviews-wrapper .swiper-button-prev {
-  left: 339px;
-  top: 354px;
+  right: 344px;
+  top: 278px;
 }
 
 .reviews-wrapper .swiper-button-next {
-  right: 330px;
-  top: 347px;
+  right: 344px;
+  top: 278px;
 }
 
 .reviews-wrapper .swiper-button-prev::after {
@@ -1705,8 +1715,6 @@ button,
 
 .advantages-wrapper {
   padding: 145px 0 90px;
-  margin: 0 auto;
-  width: 100%;
   position: relative;
   background-color: #f8f9fc;
 }
@@ -1738,6 +1746,8 @@ button,
   column-gap: 56px;
   row-gap: 155px;
   position: relative;
+  margin: 0 auto;
+  width: 100%;
   max-width: 1160px;
   padding: 0 73px;
 }
@@ -1856,6 +1866,7 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
+  margin-bottom: 16px;
 }
 
 .advantages-item__main .advantages-item__number {
@@ -2083,6 +2094,11 @@ button,
   justify-content: space-between;
 }
 
+.form__name,
+.form__phone {
+  width: 191px;
+}
+
 .form__name label,
 .form__phone label {
   display: none;
@@ -2098,6 +2114,7 @@ button,
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   color: #ffffff;
+  width: 100%;
 }
 
 .form__name input::-webkit-input-placeholder,
@@ -2195,13 +2212,20 @@ button,
 }
 
 .section-wrapper {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #102654), color-stop(50%, #ffffff), to(#ffffff));
+  background: -o-linear-gradient(left, #102654 50%, #ffffff 50%, #ffffff 100%);
+  background: linear-gradient(90deg, #102654 50%, #ffffff 50%, #ffffff 100%);
+  border-top: 1px solid #74819c;
+}
+
+.section-wrapper__content {
+  max-width: 1366px;
+  margin: 0 auto;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  max-width: 1366px;
-  margin: 0 auto;
-  border-top: 1px solid #74819c;
+  position: relative;
 }
 
 .footer-wrapper {
@@ -2478,9 +2502,10 @@ button,
 
   .subscription-wrapper::before {
     background-image: url("../img/rod-discs-tablet.jpg");
-    -webkit-transform: translate(31%, 36%);
-    -ms-transform: translate(31%, 36%);
-    transform: translate(31%, 36%);
+    -webkit-transform: translate(0, 24%);
+    -ms-transform: translate(0, 24%);
+    transform: translate(0, 24%);
+    width: 332px;
   }
 
 @supports (background-image: url("../img/rod-discs-tablet.webp")) {
@@ -2581,16 +2606,6 @@ button,
     margin: 0 56px;
   }
 
-  .swiper-button-prev {
-    left: 39px;
-    top: 244px;
-  }
-
-  .swiper-button-next {
-    right: 28px;
-    top: 233px;
-  }
-
   .slider-card {
     padding-bottom: 51.4%;
   }
@@ -2668,6 +2683,7 @@ button,
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
+    margin-bottom: 0;
   }
 
   .advantages-item__main h4 {
@@ -2761,6 +2777,11 @@ button,
     margin-bottom: 30px;
   }
 
+  .form__name,
+  .form__phone {
+    width: 208px;
+  }
+
   .contacts-block {
     width: 100%;
     padding: 62px 132px 66px;
@@ -2796,6 +2817,18 @@ button,
   }
 
   .section-wrapper {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(48%, rgb(16, 38, 84)), color-stop(48%, rgb(255, 255, 255)), to(rgb(255, 255, 255)));
+    background: -o-linear-gradient(top, rgb(16, 38, 84) 48%, rgb(255, 255, 255) 48%, rgb(255, 255, 255) 100%);
+    background: linear-gradient(180deg, rgb(16, 38, 84) 48%, rgb(255, 255, 255) 48%, rgb(255, 255, 255) 100%);
+  }
+
+  .section-wrapper {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgb(16, 38, 84)), color-stop(40%, rgb(255, 255, 255)), to(rgb(255, 255, 255)));
+    background: -o-linear-gradient(top, rgb(16, 38, 84) 40%, rgb(255, 255, 255) 40%, rgb(255, 255, 255) 100%);
+    background: linear-gradient(180deg, rgb(16, 38, 84) 40%, rgb(255, 255, 255) 40%, rgb(255, 255, 255) 100%);
+  }
+
+  .section-wrapper__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2966,11 +2999,14 @@ button,
 
   .gym-video {
     margin-top: 0;
-    width: 320px;
+    width: 100%;
   }
 
   .gym-button {
-    left: 120px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 
   .subscription-wrapper::before {
@@ -3056,7 +3092,7 @@ button,
   }
 
   .trainers-wrapper {
-    padding: 0 15px;
+    padding: 0 15px 35px;
   }
 
   .trainers-wrapper h2 {
@@ -3065,17 +3101,7 @@ button,
   }
 
   .swiper-trainers {
-    margin: 0 32px;
-  }
-
-  .swiper-button-prev {
-    left: 6px;
-    top: 208px;
-  }
-
-  .swiper-button-next {
-    right: 0px;
-    top: 200px;
+    margin: 0 32px 0 32px;
   }
 
   .swiper-button-prev::after {
@@ -3090,6 +3116,10 @@ button,
 
   .slider-card {
     padding-bottom: 121%;
+  }
+
+  .slider-inner-layer {
+    padding: 41px 27px 0 10px;
   }
 
   .reviews-wrapper h2 {
@@ -3165,7 +3195,7 @@ button,
   }
 
   .advantages-wrapper {
-    padding: 135px 0 67px;
+    padding: 81px 0 67px;
   }
 
   .advantages-wrapper h2 {
@@ -3241,7 +3271,8 @@ button,
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     grid-row: unset;
-    padding: 42px 0;
+    padding: 37px 0 39px;
+    margin-top: 10px;
     width: 100%;
   }
 
@@ -3404,6 +3435,7 @@ button,
     -ms-grid-row-span: 1;
     grid-row: 2/3;
     margin: 0;
+    width: unset;
   }
 
   .footer__item-hidden {
@@ -3411,7 +3443,9 @@ button,
   }
 
   .footer__list--mobile {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
