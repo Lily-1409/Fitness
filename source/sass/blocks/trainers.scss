@@ -76,7 +76,6 @@
 }
 
 .swiper-button-prev {
-
   @media (max-width: 1199px) {
     top: 62%;
     left: 40px;
@@ -89,7 +88,6 @@
 }
 
 .swiper-button-next {
-
   @media (max-width: 1199px) {
     top: 62%;
     right: 40px;
@@ -102,7 +100,7 @@
 }
 
 .swiper-button-prev::after {
-  content: '';
+  content: "";
   background-image: url("../../img/svg/arrow-prev.svg");
   width: 16px;
   height: 32px;
@@ -114,7 +112,7 @@
 }
 
 .swiper-button-next::after {
-  content: '';
+  content: "";
   background-image: url("../../img/svg/arrow-next.svg");
   width: 18px;
   height: 32px;
@@ -260,7 +258,7 @@
 
 .trainer-info li::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 10px;
   left: -11%;
   transform: translateY(-50%);

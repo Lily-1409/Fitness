@@ -4,7 +4,7 @@
 }
 
 .subscription-wrapper::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   right: 0;
@@ -113,7 +113,7 @@
 
 .container--tabs::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 97%;
   left: 0;
   width: 100%;
@@ -154,6 +154,7 @@
   z-index: 10;
   position: relative;
 }
+
 .content--active {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -262,7 +263,7 @@
 
 .content__price-workout--shadow {
   position: absolute;
-  content: '5000';
+  content: "";
   bottom: -5%;
   left: 50%;
   transform: translateX(-50%);
@@ -297,6 +298,6 @@
   color: $color-default-white;
   border: 2px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  border-image-source: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 }

@@ -43,8 +43,6 @@
 
 .advantages {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: grid;
   grid-template-columns: 1fr 240px 1fr;
   column-gap: 56px;
@@ -58,7 +56,6 @@
 
   @media (max-width: 1199px) {
     grid-template-columns: 1fr 1fr;
-    column-gap: unset;
     row-gap: 45px;
     column-gap: 29px;
 
@@ -73,6 +70,7 @@
     padding: 0;
   }
 }
+
 .advantages-item {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -89,7 +87,7 @@
 
 .advantages-item::before,
 .advantages-item::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 29%;
   height: 2px;
@@ -117,8 +115,7 @@
   font-size: 71px;
   line-height: normal;
   color: $sapphire;
-  background: linear-gradient(142.51deg, #D10A42 0%, #0041CA 87.33%);
-  -webkit-background-clip: text;
+  background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
 
@@ -148,7 +145,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #2E35ac;
+  color: #2e35ac;
 
   display: block;
   margin-top: -10px;
@@ -172,7 +169,7 @@
   @media (max-width: 1199px) {
     font-size: 20px;
     line-height: 30px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 7px;
   }
 
@@ -206,8 +203,8 @@
 }
 
 .advantages-item__main {
-  background-color: #1C3374;
-  padding: 63px 30px 34px 27px;
+  background-color: #1c3374;
+  padding: 49px 30px 34px 27px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -217,7 +214,7 @@
   margin-bottom: 16px;
 
   @media (max-width: 1199px) {
-    padding: 31px 137px 37px 134px;
+    padding: 27px 137px 37px 134px;
     margin: 0 auto;
     grid-column: 1/3;
     grid-row: 2/3;
@@ -227,12 +224,12 @@
   @media (max-width: 767px) {
     grid-column: 1/2;
     grid-row: unset;
-    padding: 45px 0 44px;
+    padding: 40px 0 45px;
     width: 100%;
   }
 }
 
-.advantages-item__main .advantages-item__number {
+.advantages-item__main .advantages-item__number--other {
   font-family: $ff-basic;
   font-style: normal;
   font-weight: 700;
@@ -240,8 +237,6 @@
   line-height: normal;
   color: $color-default-white;
   background: unset;
-  -webkit-background-clip: unset;
-  -webkit-text-fill-color: unset;
   background-clip: unset;
 
   @media (max-width: 767px) {
@@ -259,14 +254,14 @@
 
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin: -2px 0 30px;
 
   @media (max-width: 1199px) {
     margin: -6px 0 16px;
   }
 
   @media (max-width: 767px) {
-    margin: -12px 0 9px;
+    margin: -5px 0 9px;
   }
 }
 

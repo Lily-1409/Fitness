@@ -1067,7 +1067,7 @@ button,
 
 .gym-video:hover .gym-button,
 .gym-button:focus {
-  border: 2px solid blue;
+  border: 2px solid #ffffff;
 }
 
 .gym-video--enabled {
@@ -1242,7 +1242,7 @@ button,
 
 .content__price-workout--shadow {
   position: absolute;
-  content: "5000";
+  content: "";
   bottom: -5%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1280,9 +1280,9 @@ button,
   color: #ffffff;
   border: 2px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-  background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  border-image-source: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 }
 
 .promo-wrapper {
@@ -1745,8 +1745,6 @@ button,
 
 .advantages {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 240px 1fr;
@@ -1798,10 +1796,10 @@ button,
   font-size: 71px;
   line-height: normal;
   color: #102654;
-  background: -o-linear-gradient(307.49deg, #D10A42 0%, #0041CA 87.33%);
-  background: linear-gradient(142.51deg, #D10A42 0%, #0041CA 87.33%);
-  -webkit-background-clip: text;
+  background: -o-linear-gradient(307.49deg, #d10a42 0%, #0041ca 87.33%);
+  background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   background-clip: text;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -1818,7 +1816,7 @@ button,
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #2E35ac;
+  color: #2e35ac;
   display: block;
   margin-top: -10px;
 }
@@ -1860,8 +1858,8 @@ button,
 }
 
 .advantages-item__main {
-  background-color: #1C3374;
-  padding: 63px 30px 34px 27px;
+  background-color: #1c3374;
+  padding: 49px 30px 34px 27px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1881,7 +1879,7 @@ button,
   margin-bottom: 16px;
 }
 
-.advantages-item__main .advantages-item__number {
+.advantages-item__main .advantages-item__number--other {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1889,8 +1887,6 @@ button,
   line-height: normal;
   color: #ffffff;
   background: unset;
-  -webkit-background-clip: unset;
-  -webkit-text-fill-color: unset;
   background-clip: unset;
 }
 
@@ -1903,7 +1899,7 @@ button,
   color: #ffffff;
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin: -2px 0 30px;
 }
 
 .advantages-item__main p {
@@ -2662,7 +2658,7 @@ button,
 
   .reviews-wrapper {
     padding-top: 43px;
-    padding-bottom: 69px;
+    padding-bottom: 98px;
   }
 
   .reviews-wrapper h2 {
@@ -2710,9 +2706,6 @@ button,
   .advantages {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: unset;
-    -moz-column-gap: unset;
-    column-gap: unset;
     row-gap: 45px;
     -webkit-column-gap: 29px;
     -moz-column-gap: 29px;
@@ -2733,12 +2726,12 @@ button,
   .advantages h4 {
     font-size: 20px;
     line-height: 30px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 7px;
   }
 
   .advantages-item__main {
-    padding: 31px 137px 37px 134px;
+    padding: 27px 137px 37px 134px;
     margin: 0 auto;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -3204,6 +3197,11 @@ button,
     margin-left: 15px;
   }
 
+  .reviews-wrapper {
+    padding-top: 43px;
+    padding-bottom: 69px;
+  }
+
   .reviews-wrapper h2 {
     font-size: 32px;
     line-height: 38px;
@@ -3352,16 +3350,16 @@ button,
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     grid-row: unset;
-    padding: 45px 0 44px;
+    padding: 40px 0 45px;
     width: 100%;
   }
 
-  .advantages-item__main .advantages-item__number {
+  .advantages-item__main .advantages-item__number--other {
     line-height: 1;
   }
 
   .advantages-item__main h4 {
-    margin: -12px 0 9px;
+    margin: -5px 0 9px;
   }
 
   .promotion-wrapper {

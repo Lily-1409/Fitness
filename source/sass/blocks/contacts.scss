@@ -4,19 +4,19 @@
   width: 51%;
 
   @media (max-width: 1199px) {
-    width:100%;
+    width: 100%;
     padding: 62px 132px 66px;
   }
 
   @media (max-width: 767px) {
-    width:100%;
+    width: 100%;
     padding: 64px 17px 62px;
   }
 }
 
 .contacts-block::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 49%;
   left: 52%;
   width: 1px;
