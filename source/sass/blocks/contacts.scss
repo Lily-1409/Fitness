@@ -110,7 +110,8 @@
   }
 }
 
-.contacts-item p {
+.contacts-item p,
+.contacts-item a {
   font-family: $ff-basic;
   font-style: normal;
   font-weight: 400;

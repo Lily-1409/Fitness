@@ -51,21 +51,13 @@
 
 .footer__list {
   list-style-type: none;
-  margin: 7px 0 0 9px;
+  margin: 1px 0 0 9px;
   padding: 0;
 
   display: flex;
   justify-content: space-between;
   gap: 40px;
   width: 430px;
-
-  font-family: $ff-heading;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.1em;
-  color: $color-default-white;
 
   @media (max-width: 1199px) {
     gap: 30px;
@@ -91,6 +83,16 @@
   @media (max-width: 767px) {
     display: none;
   }
+}
+
+.footer__item a {
+  font-family: $ff-heading;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  color: $color-default-white;
 }
 
 .footer__list--mobile {

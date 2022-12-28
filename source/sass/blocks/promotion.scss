@@ -1,12 +1,12 @@
 .promotion-wrapper {
-  padding: 134px 0 50px;
+  padding: 151px 0 50px;
 
   @media (max-width: 1199px) {
-    padding: 72px 0 50px;
+    padding: 93px 0 50px;
   }
 
   @media (max-width: 767px) {
-    padding: 57px 0 20px;
+    padding: 65px 0 20px;
   }
 }
 
@@ -145,23 +145,39 @@
 }
 
 .main-info-image {
-
-  // @media (max-width: 1199px) {
-  //   height: 462px;
-  //   width: 399px;
-  //   flex: 0 0 auto;
-  // }
+  overflow: hidden;
+  position: relative;
+  width: 50%;
 
   @media (max-width: 1199px) {
     height: auto;
     width: 100%;
   }
+
+  @media (max-width: 767px) {
+    height: 302px;
+  }
 }
 
 .main-info-image img {
+  position: absolute;
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  bottom: 88px;
+  left: 32px;
+  transform: scale(1.45);
+
+  @media (max-width: 1199px) {
+    transform: scale(1.1, 1.5);
+    bottom: 80px;
+    left: 24px;
+  }
+
+  @media (max-width: 767px) {
+    transform: scale(1.1,1.7);
+    bottom: 43px;
+    left: 10px;
+  }
 }
 
 .additional-info {

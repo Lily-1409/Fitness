@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Описание проекта">
     <title>Fitness</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
       <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff" as="font" type="font/woff" crossorigin>
       <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
       <link rel="preload" href="fonts/AlumniSans-SemiBold.woff" as="font" type="font/woff" crossorigin>
@@ -65,8 +64,6 @@
             <div class="gym-image">
               <div class="gym-image__wrapper">
                 <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-full.webp 1x, img/gym-full@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="./img/gym-full.webp 1x, ./img/gym-full@2x.webp 2x">
                   <img src="./img/gym-full.jpg" width="660" height="401" alt="Изображение спортзала">
                 </picture>
@@ -74,10 +71,8 @@
               <div class="gym-video">
                 <a class="gym-video__link" href="https://www.youtube.com/embed/9TZXsZItgdw">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-video-mobile.webp 1x, img/gym-video-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-video-tablet.webp 1x, img/gym-video-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="./img/gym-video-desktop.webp 1x, ./img/gym-video-desktop@2x.webp 2x">
-                    <img class="gym-video__media" src="./img/gym-video-desktop.jpg" srcset="./img/gymp-video-desktop@2x.jpg" width="364" height="228" alt="Изображение заставки видео">
+                    <source type="image/webp" srcset="./img/gym-video-cover.webp 1x, ./img/gym-video-cover@2x.webp 2x">
+                    <img class="gym-video__media" src="./img/gym-video-cover.jpg" srcset="./img/gym-video-cover@2x.jpg" width="364" height="228" alt="Изображение заставки видео">
                   </picture>
                 </a>
                 <button class="gym-button" aria-label="Запустить видео">
@@ -212,8 +207,6 @@
               </div>
               <div class="promo-image">
                 <picture>
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/promo-mobile.webp 1x, img/promo-mobile@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/promo-tablet.webp 1x, img/promo-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="./img/promo-desktop.webp 1x, ./img/promo-desktop@2x.webp 2x">
                   <img class="promo-image__image" src="./img/promo-desktop.jpg" srcset="./img/promo-desktop@2x.jpg 2x" width="660" height="500" alt="Фото тренера">
                 </picture>
@@ -411,10 +404,8 @@
                 </div>
                 <div class="main-info-image">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/promotion-mobile.webp 1x, img/promotion-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1199px)" srcset="img/promotion-tablet.webp 1x, img/promotion-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="./img/promotion-desktop.webp 1x, ./img/promotion-desktop@2x.webp 2x">
-                    <img src="./img/promotion-desktop.jpg" srcset="./img/promotion-desktop@2x.jpg 2x" width="280" height="462" alt="Акция">
+                    <source type="image/webp" srcset="./img/promotion-image.webp 1x, ./img/promotion-image@2x.webp 2x">
+                    <img src="./img/promotion-image.jpg" srcset="./img/promotion-image@2x.jpg 2x" width="280" height="462" alt="Акция">
                   </picture>
                 </div>
               </div>
@@ -525,11 +516,11 @@
                 <ul class="contacts-list">
                   <li class="contacts-item">
                     <h4>Телефон:</h4>
-                    <p>8-800-555-55-55</p>
+                    <a href="tel:+78005555555">8-800-555-55-55</a>
                   </li>
                   <li class="contacts-item">
                     <h4>Email:</h4>
-                    <p>omsk@supergym.ru</p>
+                    <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
                   </li>
                 </ul>
               </div>
@@ -545,16 +536,16 @@
               </svg>
             </a>
             <ul class="footer__list">
-              <li class="footer__item">Услуги</li>
-              <li class="footer__item">Абонементы</li>
-              <li class="footer__item footer__item-hidden">Акции</li>
-              <li class="footer__item footer__item-hidden">Тренеры</li>
-              <li class="footer__item footer__item-hidden">Расписание</li>
+              <li class="footer__item"><a href="#">Услуги</a></li>
+              <li class="footer__item"><a href="#">Абонементы</a></li>
+              <li class="footer__item footer__item-hidden"><a href="#">Акции</a></li>
+              <li class="footer__item footer__item-hidden"><a href="#">Тренеры</a></li>
+              <li class="footer__item footer__item-hidden"><a href="#">Расписание</a></li>
             </ul>
             <ul class="footer__list footer__list--mobile">
-              <li class="footer__item">Акции</li>
-              <li class="footer__item">Тренеры</li>
-              <li class="footer__item">Расписание</li>
+              <li class="footer__item"><a href="#">Акции</a></li>
+              <li class="footer__item"><a href="#">Тренеры</a></li>
+              <li class="footer__item"><a href="#">Расписание</a></li>
             </ul>
             <ul class="footer__social-networks">
               <li class="footer__social-networks-item">
@@ -584,7 +575,6 @@
       </footer>
     </div>
     <script src="js/vendor.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
