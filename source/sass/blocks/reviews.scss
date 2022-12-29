@@ -74,6 +74,11 @@
   }
 }
 
+.swiper-reviews-slide:hover,
+.swiper-reviews-slide:focus {
+  border: 1px solid $color-torch-red;
+}
+
 .swiper-reviews-slide__avatar {
   width: 80px;
   height: 80px;

@@ -151,6 +151,10 @@
   }
 }
 
+.slider-card:focus {
+  border: 1px solid $sapphire;
+}
+
 .slider-card h4,
 .slider-card h5 {
   font-family: $ff-basic;

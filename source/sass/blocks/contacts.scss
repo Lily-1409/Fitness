@@ -63,6 +63,7 @@
   display: flex;
   gap: 114px;
   position: relative;
+  flex-wrap: wrap;
 
   @media (max-width: 1199px) {
     gap: 88px;
@@ -126,4 +127,8 @@
     font-size: 18px;
     line-height: 27px;
   }
+}
+
+.contacts-item a:hover {
+  border-bottom: 1px solid $sapphire;
 }

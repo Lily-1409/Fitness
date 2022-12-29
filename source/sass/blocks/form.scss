@@ -43,6 +43,7 @@
 
 .form__container {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 30px;
   justify-content: space-between;
@@ -64,7 +65,7 @@
   width: 191px;
 
   @media (max-width: 1199px) {
-    width: 208px;
+    width: 206px;
   }
 
   @media (max-width: 767px) {

@@ -1999,6 +1999,8 @@ button,
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -2379,6 +2381,10 @@ button,
   position: relative;
 }
 
+.slider-card:focus {
+  border: 1px solid #102654;
+}
+
 .slider-card h4,
 .slider-card h5 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -2510,6 +2516,11 @@ button,
   -webkit-column-gap: 28px;
   -moz-column-gap: 28px;
   column-gap: 28px;
+}
+
+.swiper-reviews-slide:hover,
+.swiper-reviews-slide:focus {
+  border: 1px solid #ff1553;
 }
 
 .swiper-reviews-slide__avatar {
@@ -2986,6 +2997,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 30px;
   -webkit-box-pack: justify;
@@ -3075,6 +3088,8 @@ button,
   display: flex;
   gap: 114px;
   position: relative;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .contacts-list {
@@ -3109,6 +3124,10 @@ button,
   color: #102654;
   margin: 0;
   padding: 0;
+}
+
+.contacts-item a:hover {
+  border-bottom: 1px solid #102654;
 }
 
 .section-wrapper {
@@ -3156,6 +3175,8 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 40px;
   width: 430px;
 }
@@ -3170,6 +3191,10 @@ button,
   color: #ffffff;
 }
 
+.footer__item a:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
 .footer__list--mobile {
   display: none;
 }
@@ -3181,12 +3206,21 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 100px;
   gap: 11px;
 }
 
 .footer__social-networks-item svg {
+  fill: #ffffff;
   width: 25px;
   height: 25px;
+}
+
+.footer__social-networks-item:hover svg {
+  fill: #ffffff;
+  opacity: 0.5;
 }
 
 /* @mixin hover-focus {
@@ -3750,7 +3784,7 @@ button,
 
   .form__name,
   .form__phone {
-    width: 208px;
+    width: 206px;
   }
 
   .contacts-block {
@@ -3789,15 +3823,7 @@ button,
   }
 
   .section-wrapper {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(48%, rgb(16, 38, 84)), color-stop(48%, rgb(255, 255, 255)), to(rgb(255, 255, 255)));
-    background: -o-linear-gradient(top, rgb(16, 38, 84) 48%, rgb(255, 255, 255) 48%, rgb(255, 255, 255) 100%);
-    background: linear-gradient(180deg, rgb(16, 38, 84) 48%, rgb(255, 255, 255) 48%, rgb(255, 255, 255) 100%);
-  }
-
-  .section-wrapper {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgb(16, 38, 84)), color-stop(40%, rgb(255, 255, 255)), to(rgb(255, 255, 255)));
-    background: -o-linear-gradient(top, rgb(16, 38, 84) 40%, rgb(255, 255, 255) 40%, rgb(255, 255, 255) 100%);
-    background: linear-gradient(180deg, rgb(16, 38, 84) 40%, rgb(255, 255, 255) 40%, rgb(255, 255, 255) 100%);
+    background: unset;
   }
 
   .section-wrapper__content {
@@ -4009,7 +4035,7 @@ button,
   }
 
   .tabs-container {
-    gap: 45px;
+    gap: 43px;
     margin-bottom: 38px;
   }
 
@@ -4439,6 +4465,10 @@ button,
     margin: 0 0 5px 0;
   }
 
+  .section-wrapper {
+    background: transparent;
+  }
+
   .footer-wrapper {
     padding: 51px 0;
   }
@@ -4497,6 +4527,8 @@ button,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
@@ -4514,6 +4546,7 @@ button,
     grid-row: 3/4;
     margin-top: 35px;
     margin-right: 0;
+    max-width: unset;
   }
 }
 
