@@ -17,6 +17,16 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+
+  @media (max-width: 1199px) {
+    max-width: 710px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 260px;
+  }
 }
 
 .reviews-wrapper h2 {
@@ -99,7 +109,7 @@
     width: 70px;
     height: 70px;
     margin-top: 0;
-    margin-left: 9px;
+    margin-left: 13px;
   }
 }
 
@@ -153,14 +163,14 @@
 .reviews-wrapper button {
   display: flex;
   justify-content: center;
-  top: 54%;
+  top: 65%;
 
   @media (max-width: 1199px) {
-    top: 57%;
+    top: 63%;
   }
 
   @media (max-width: 767px) {
-    top: 55%;
+    top: 59%;
   }
 }
 
@@ -171,22 +181,26 @@
 }
 
 .reviews-wrapper .swiper-button-prev {
-  left: 25%;
+  left: 5px;
 
   @media (max-width: 1199px) {
-    left: 5%;
+    left: -5px;
   }
 
   @media (max-width: 767px) {
-    left: 1%;
+    left: -25px;
   }
 }
 
 .reviews-wrapper .swiper-button-next {
-  right: 25%;
+  right: 5px;
 
   @media (max-width: 1199px) {
-    right: 5%;
+    right: -5px;
+  }
+
+  @media (max-width: 767px) {
+    right: -25px;
   }
 }
 
@@ -204,9 +218,10 @@
 
 .reviews-wrapper .swiper-button-next::after {
   content: "";
-  background-image: url("../img/svg/arrow-next.svg");
+  background-image: url("../img/svg/arrow-prev.svg");
   width: 18px;
   height: 32px;
+  transform: rotate(180deg);
 
   @media (max-width: 767px) {
     width: 10px;

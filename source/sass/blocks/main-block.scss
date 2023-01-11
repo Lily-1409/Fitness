@@ -154,6 +154,7 @@
 
   @media (max-width: 767px) {
     margin-right: 0;
+    padding-top: 51px;
   }
 }
 
@@ -213,7 +214,8 @@
   }
 
   @media (max-width: 767px) {
-    font-size: 72px;
+    font-size: 74px;
+    margin-right: 4px;
   }
 }
 
@@ -235,9 +237,10 @@
   }
 
   @media (max-width: 767px) {
+    height: 62px;
     width: 100%;
     position: absolute;
-    top: 76%;
+    top: 75.5%;
     left: 0;
 
     margin-left: 0;

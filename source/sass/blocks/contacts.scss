@@ -10,7 +10,7 @@
 
   @media (max-width: 767px) {
     width: 100%;
-    padding: 64px 17px 62px;
+    padding: 64px 17px 68px;
   }
 }
 
@@ -48,7 +48,7 @@
   @media (max-width: 767px) {
     font-size: 32px;
     line-height: 38px;
-    margin-bottom: 31px;
+    margin-bottom: 35px;
   }
 }
 
@@ -139,6 +139,10 @@
   @media (max-width: 1199px) {
     font-size: 18px;
     line-height: 27px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 17px;
   }
 }
 

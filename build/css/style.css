@@ -2363,24 +2363,27 @@ button,
   top: 52%;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.trainers-wrapper .swiper-button-prev,
+.trainers-wrapper .swiper-button-next {
   border: none;
   background-color: transparent;
 }
 
 .swiper-button-prev::after {
   content: "";
-  background-image: url("../../img/svg/arrow-prev.svg");
+  background-image: url("../img/svg/arrow-prev.svg");
   width: 16px;
   height: 32px;
 }
 
 .swiper-button-next::after {
   content: "";
-  background-image: url("../../img/svg/arrow-next.svg");
+  background-image: url("../img/svg/arrow-prev.svg");
   width: 18px;
   height: 32px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .slider-image-wrapper {
@@ -2430,11 +2433,13 @@ button,
   white-space: nowrap;
 }
 
-.slider-card:hover .slider-inner-layer {
+.slider-card:hover .slider-inner-layer,
+.slider-card:focus .slider-inner-layer {
   display: block;
 }
 
-.slider-card:hover h4 {
+.slider-card:hover h4,
+.slider-card:focus h4 {
   display: none;
 }
 
@@ -2518,6 +2523,8 @@ button,
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .reviews-wrapper h2 {
@@ -2616,7 +2623,7 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  top: 54%;
+  top: 65%;
 }
 
 .reviews-wrapper .swiper-button-prev,
@@ -2626,11 +2633,11 @@ button,
 }
 
 .reviews-wrapper .swiper-button-prev {
-  left: 25%;
+  left: 5px;
 }
 
 .reviews-wrapper .swiper-button-next {
-  right: 25%;
+  right: 5px;
 }
 
 .reviews-wrapper .swiper-button-prev::after {
@@ -2642,9 +2649,12 @@ button,
 
 .reviews-wrapper .swiper-button-next::after {
   content: "";
-  background-image: url("../img/svg/arrow-next.svg");
+  background-image: url("../img/svg/arrow-prev.svg");
   width: 18px;
   height: 32px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .advantages-wrapper {
@@ -3487,8 +3497,8 @@ button,
 
   .gym-video {
     margin-top: -94px;
-    margin-left: -16px;
-    width: 261px;
+    margin-left: -19px;
+    width: 256px;
     height: 172px;
   }
 
@@ -3624,13 +3634,13 @@ button,
     top: 61%;
   }
 
-  .swiper-button-prev {
-    top: 62%;
+  .trainers-wrapper .swiper-button-prev {
+    top: 48%;
     left: 40px;
   }
 
-  .swiper-button-next {
-    top: 62%;
+  .trainers-wrapper .swiper-button-next {
+    top: 48%;
     right: 40px;
   }
 
@@ -3643,11 +3653,13 @@ button,
     left: 51%;
   }
 
-  .slider-card:hover .slider-inner-layer {
+  .slider-card:hover .slider-inner-layer,
+  .slider-card:focus .slider-inner-layer {
     display: none;
   }
 
-  .slider-card:hover h4 {
+  .slider-card:hover h4,
+  .slider-card:focus h4 {
     display: block;
   }
 
@@ -3676,6 +3688,10 @@ button,
     padding-bottom: 98px;
   }
 
+  .reviews-content {
+    max-width: 710px;
+  }
+
   .reviews-wrapper h2 {
     font-size: 42px;
     line-height: 50px;
@@ -3695,15 +3711,15 @@ button,
   }
 
   .reviews-wrapper button {
-    top: 57%;
+    top: 63%;
   }
 
   .reviews-wrapper .swiper-button-prev {
-    left: 5%;
+    left: -5px;
   }
 
   .reviews-wrapper .swiper-button-next {
-    right: 5%;
+    right: -5px;
   }
 
   .advantages-wrapper {
@@ -3866,6 +3882,10 @@ button,
     width: 44%;
   }
 
+  .form__button {
+    height: 54px;
+  }
+
   .contacts-block {
     width: 100%;
     padding: 62px 30px 66px 132px;
@@ -4022,6 +4042,7 @@ button,
 
   .about-info {
     margin-right: 0;
+    padding-top: 51px;
   }
 
   .about-info p {
@@ -4031,13 +4052,15 @@ button,
   }
 
   .about-info h1 {
-    font-size: 72px;
+    font-size: 74px;
+    margin-right: 4px;
   }
 
   .about-button {
+    height: 62px;
     width: 100%;
     position: absolute;
-    top: 76%;
+    top: 75.5%;
     left: 0;
     margin-left: 0;
   }
@@ -4047,7 +4070,7 @@ button,
   }
 
   .gym-wrapper {
-    padding: 64px 0 74px;
+    padding: 64px 0 70px;
   }
 
   .gym {
@@ -4098,7 +4121,7 @@ button,
   .gym-video {
     margin: 0;
     width: 100%;
-    height: 162px;
+    height: 166px;
   }
 
   .gym-video__media {
@@ -4122,7 +4145,7 @@ button,
   }
 
   .subscription {
-    padding: 65px 0 72px;
+    padding: 65px 0 70px;
   }
 
   .subscription h2 {
@@ -4132,7 +4155,7 @@ button,
 
   .tabs-container {
     gap: 43px;
-    margin-bottom: 38px;
+    margin-bottom: 35px;
   }
 
   .tab {
@@ -4143,7 +4166,7 @@ button,
 
   .content--active {
     padding: 0;
-    gap: 33px;
+    gap: 36px;
   }
 
   .content__item {
@@ -4188,7 +4211,7 @@ button,
   }
 
   .promo-description {
-    padding: 49px 44px 52px;
+    padding: 47px 44px 52px;
     width: 100%;
   }
 
@@ -4219,7 +4242,7 @@ button,
   }
 
   .trainers-wrapper {
-    padding: 0 15px 69px;
+    padding: 0 15px 72px;
   }
 
   .trainers-wrapper h2 {
@@ -4233,16 +4256,16 @@ button,
   }
 
   .trainers-wrapper button {
-    top: 55%;
+    top: 51%;
   }
 
-  .swiper-button-prev {
-    top: 55%;
+  .trainers-wrapper .swiper-button-prev {
+    top: 51%;
     left: 8px;
   }
 
-  .swiper-button-next {
-    top: 55%;
+  .trainers-wrapper .swiper-button-next {
+    top: 52%;
     right: 8px;
   }
 
@@ -4277,6 +4300,10 @@ button,
     padding-bottom: 67px;
   }
 
+  .reviews-content {
+    max-width: 260px;
+  }
+
   .reviews-wrapper h2 {
     font-size: 32px;
     line-height: 38px;
@@ -4305,7 +4332,7 @@ button,
     width: 70px;
     height: 70px;
     margin-top: 0;
-    margin-left: 9px;
+    margin-left: 13px;
   }
 
   .swiper-reviews-slide h4 {
@@ -4330,11 +4357,15 @@ button,
   }
 
   .reviews-wrapper button {
-    top: 55%;
+    top: 59%;
   }
 
   .reviews-wrapper .swiper-button-prev {
-    left: 1%;
+    left: -25px;
+  }
+
+  .reviews-wrapper .swiper-button-next {
+    right: -25px;
   }
 
   .reviews-wrapper .swiper-button-prev::after {
@@ -4348,7 +4379,7 @@ button,
   }
 
   .advantages-wrapper {
-    padding: 66px 0 62px;
+    padding: 64px 0 62px;
   }
 
   .advantages-wrapper h2 {
@@ -4468,6 +4499,7 @@ button,
   .main-info-content {
     width: 100%;
     padding-bottom: 47px;
+    padding-left: 39px;
   }
 
   .main-info {
@@ -4498,7 +4530,7 @@ button,
   }
 
   .main-info-image {
-    height: 302px;
+    height: 299px;
   }
 
   .main-info-image img {
@@ -4562,7 +4594,7 @@ button,
 
   .contacts-block {
     width: 100%;
-    padding: 64px 17px 62px;
+    padding: 64px 17px 68px;
   }
 
   .contacts-content {
@@ -4573,7 +4605,7 @@ button,
   .contacts-block h2 {
     font-size: 32px;
     line-height: 38px;
-    margin-bottom: 31px;
+    margin-bottom: 35px;
   }
 
   .contacts-wrapper {
@@ -4590,12 +4622,17 @@ button,
     margin: 0 0 5px 0;
   }
 
+  .contacts-item p,
+  .contacts-item a {
+    font-size: 17px;
+  }
+
   .section-wrapper {
     background: transparent;
   }
 
   .footer-wrapper {
-    padding: 51px 0;
+    padding: 39px 0;
   }
 
   .footer {
@@ -4633,7 +4670,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 19px;
+    gap: 26px;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;

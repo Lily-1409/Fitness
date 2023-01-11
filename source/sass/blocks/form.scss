@@ -119,4 +119,8 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
+
+  @media (max-width: 1199px) {
+    height: 54px;
+  }
 }
