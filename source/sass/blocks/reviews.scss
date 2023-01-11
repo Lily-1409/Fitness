@@ -1,6 +1,5 @@
 .reviews-wrapper {
   padding: 62px 0 119px;
-  position: relative;
 
   @media (max-width: 1199px) {
     padding-top: 43px;
@@ -11,6 +10,13 @@
     padding-top: 43px;
     padding-bottom: 67px;
   }
+}
+
+.reviews-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .reviews-wrapper h2 {
@@ -43,15 +49,15 @@
 
 .swiper-reviews {
   overflow: hidden;
-  margin: 0 300px;
+  max-width: 560px;
   position: relative;
 
   @media (max-width: 1199px) {
-    margin: 0 56px;
+    max-width: 566px;
   }
 
   @media (max-width: 767px) {
-    margin: 0 32px;
+    max-width: 226px;
   }
 }
 
@@ -186,7 +192,7 @@
 
 .reviews-wrapper .swiper-button-prev::after {
   content: "";
-  background-image: url("../../img/svg/arrow-prev.svg");
+  background-image: url("../img/svg/arrow-prev.svg");
   width: 16px;
   height: 32px;
 
@@ -198,7 +204,7 @@
 
 .reviews-wrapper .swiper-button-next::after {
   content: "";
-  background-image: url("../../img/svg/arrow-next.svg");
+  background-image: url("../img/svg/arrow-next.svg");
   width: 18px;
   height: 32px;
 

@@ -17,6 +17,7 @@ export const swiperTrainers = new window.Swiper('.swiper-trainers', {
   },
   // Optional parameters
   loop: true,
+  autoHeight: true,
 
   // Navigation arrows
   navigation: {
@@ -31,6 +32,7 @@ export const swiperReviews = new window.Swiper('.swiper-reviews', {
   slidesPerView: 1,
   // Optional parameters
   loop: false,
+  autoHeight: true,
 
   // Navigation arrows
   navigation: {

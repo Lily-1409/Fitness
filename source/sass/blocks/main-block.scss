@@ -13,6 +13,13 @@
   }
 }
 
+.header-content {
+  @media (max-width: 1199px) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
 .contacts {
   justify-content: space-between;
   display: inline-flex;

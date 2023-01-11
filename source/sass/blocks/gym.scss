@@ -169,6 +169,11 @@
 
   @media (max-width: 1199px) {
     transform: scale(1.16, 0.9);
+    object-position: left -40px top 50%;
+  }
+
+  @media (max-width: 900px) {
+    transform: scale(1.16, 0.9);
     object-position: left -40px top -23px;
   }
 

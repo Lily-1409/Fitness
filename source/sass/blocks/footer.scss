@@ -55,9 +55,9 @@
   padding: 0;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 40px;
+  column-gap: 40px;
   width: 430px;
 
   @media (max-width: 1199px) {

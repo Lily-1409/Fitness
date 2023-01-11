@@ -1,11 +1,11 @@
 .contacts-block {
   position: relative;
-  padding: 56px 123px;
+  padding: 56px 85px 56px 123px;
   width: 51%;
 
   @media (max-width: 1199px) {
     width: 100%;
-    padding: 62px 132px 66px;
+    padding: 62px 30px 66px 132px;
   }
 
   @media (max-width: 767px) {
@@ -14,22 +14,15 @@
   }
 }
 
-.contacts-block::before {
-  position: absolute;
-  content: "";
-  top: 49%;
-  left: 52%;
-  width: 1px;
-  height: 102px;
-  background-color: #74819c;
-
+.contacts-content {
   @media (max-width: 1199px) {
-    top: 42%;
-    height: 127px;
+    max-width: 703px;
+    margin: 0 auto;
   }
 
   @media (max-width: 767px) {
-    display: none;
+    max-width: unset;
+    margin: 0;
   }
 }
 
@@ -55,23 +48,42 @@
   @media (max-width: 767px) {
     font-size: 32px;
     line-height: 38px;
-    margin-bottom: 35px;
+    margin-bottom: 31px;
   }
 }
 
 .contacts-wrapper {
-  display: flex;
-  gap: 114px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 110px;
   position: relative;
-  flex-wrap: wrap;
 
   @media (max-width: 1199px) {
-    gap: 88px;
+    column-gap: 25px;
   }
 
   @media (max-width: 767px) {
-    flex-direction: column;
-    gap: 20px;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+}
+
+.contacts-wrapper::before {
+  position: absolute;
+  content: "";
+  top: 5%;
+  left: 49%;
+  width: 1px;
+  height: 87%;
+  background-color: #74819c;
+
+  @media (max-width: 1199px) {
+    top: 6%;
+    left: 44%;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
   }
 }
 
@@ -86,7 +98,7 @@
   gap: 15px;
 
   @media (max-width: 1199px) {
-    gap: 20px;
+    gap: 15px;
   }
 }
 
@@ -121,6 +133,7 @@
   color: $sapphire;
 
   margin: 0;
+  margin-bottom: 5px;
   padding: 0;
 
   @media (max-width: 1199px) {
