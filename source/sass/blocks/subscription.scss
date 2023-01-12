@@ -52,7 +52,7 @@
 }
 
 .subscription {
-  padding: 122px 0 119px;
+  padding: 120px 0 119px;
   text-align: center;
 
   @media (max-width: 1199px) {
@@ -168,7 +168,7 @@
 
   @media (max-width: 767px) {
     padding: 0;
-    gap: 36px;
+    gap: 34px;
   }
 }
 
@@ -188,7 +188,7 @@
   }
 
   @media (max-width: 767px) {
-    padding: 41px 34px 49px 33px;
+    padding: 43px 34px 49px 33px;
     max-height: 384px;
   }
 }
@@ -252,6 +252,7 @@
     font-size: 48px;
     line-height: 72px;
     margin-bottom: 30px;
+    margin-left: 5px;
   }
 }
 

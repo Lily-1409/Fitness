@@ -1,5 +1,5 @@
 .promo-wrapper {
-  padding: 117px 0 107px;
+  padding: 121px 0 104px;
 
   @media (max-width: 1199px) {
     padding: 102px 0 100px;
@@ -11,7 +11,7 @@
 }
 
 .promo {
-  background: linear-gradient(90deg, rgba(237,2,51,1) 44.5%, rgba(237,2,51,1) 44.5%, rgba(0,0,64,1) 44.5%);
+  background: linear-gradient(90deg, rgba(237, 2, 51, 1) 44.5%, rgba(237, 2, 51, 1) 44.5%, rgba(0, 0, 64, 1) 44.5%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +24,7 @@
 // стилизация описания блока промо
 .promo-description {
   background-color: $torch-red;
-  padding: 81px 77px 83px 76px;
+  padding: 74px 77px 83px 76px;
   width: 66%;
 
   @media (max-width: 1199px) {
@@ -102,7 +102,7 @@
     font-size: 12px;
     line-height: 18px;
 
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 }
 
@@ -195,17 +195,19 @@
 
 .promo-image {
   width: 100%;
-  height: 100%;
+  height: 0;
+  padding-bottom: 43.3%;
   background-color: #000040;
 
   @media (max-width: 1199px) {
     max-width: 620px;
+    padding-bottom: 43%;
+    overflow: hidden;
   }
 
   @media (max-width: 767px) {
     max-width: unset;
-    height: 293px;
-    overflow: hidden;
+    padding-bottom: 101%;
   }
 }
 

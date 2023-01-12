@@ -6,7 +6,7 @@
   position: relative;
 
   @media (max-width: 1199px) {
-    padding: 100px 45px 86px;
+    padding: 100px 45px 112px;
   }
 
   @media (max-width: 767px) {
@@ -186,23 +186,23 @@
 // стилизация видео тренажерного зала
 .gym-video {
   position: relative;
-  width: 348px;
+  width: 340px;
   height: 228px;
   z-index: 10;
 
   margin-top: -101px;
-  margin-left: -59px;
+  margin-left: -60px;
 
   @media (max-width: 1199px) {
-    margin-top: -94px;
-    margin-left: -19px;
-    width: 256px;
-    height: 172px;
+    margin-top: -89px;
+    margin-left: -22px;
+    width: 249px;
+    height: 141px;
   }
 
   @media (max-width: 767px) {
     margin: 0;
-    width: 100%;
+    width: 320px;
     height: 166px;
   }
 }
@@ -224,8 +224,13 @@
   border: none;
   object-fit: cover;
 
-  transform: scale(1.1, 1.1);
-  object-position: top -20px right -17px;
+  transform: scale(1.15, 1.1);
+  object-position: top -20px right -19px;
+
+  @media (max-width: 1199px) {
+    transform: scale(1.15, 1.17);
+    object-position: top -20px right -17px;
+  }
 
   @media (max-width: 767px) {
     transform: unset;
@@ -243,8 +248,8 @@
   cursor: pointer;
 
   @media (max-width: 1199px) {
-    left: 91px;
-    top: 43%;
+    left: 93px;
+    top: 48%;
   }
 
   @media (max-width: 767px) {

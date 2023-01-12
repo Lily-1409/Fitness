@@ -33,6 +33,7 @@
     line-height: 50px;
     text-align: center;
     margin-bottom: 31px;
+    margin-left: -5px;
   }
 
   @media (max-width: 767px) {
@@ -76,6 +77,8 @@
 }
 
 .trainers-wrapper .swiper-button-prev {
+  left: 3px;
+
   @media (max-width: 1199px) {
     top: 48%;
     left: 40px;
@@ -88,6 +91,8 @@
 }
 
 .trainers-wrapper .swiper-button-next {
+  right: 3px;
+
   @media (max-width: 1199px) {
     top: 48%;
     right: 40px;
@@ -173,7 +178,7 @@
 
 .slider-card h4 {
   position: absolute;
-  bottom: 20px;
+  bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
