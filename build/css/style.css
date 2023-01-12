@@ -2178,21 +2178,26 @@ button,
 }
 
 .promo {
-  background: -webkit-gradient(linear, left top, right top, color-stop(44.5%, rgb(237, 2, 51)), color-stop(44.5%, rgb(237, 2, 51)), color-stop(44.5%, rgb(0, 0, 64)));
-  background: -o-linear-gradient(left, rgb(237, 2, 51) 44.5%, rgb(237, 2, 51) 44.5%, rgb(0, 0, 64) 44.5%);
-  background: linear-gradient(90deg, rgb(237, 2, 51) 44.5%, rgb(237, 2, 51) 44.5%, rgb(0, 0, 64) 44.5%);
+  background: #040448;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .promo-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: #ed0233;
   padding: 74px 77px 83px 76px;
   width: 66%;
