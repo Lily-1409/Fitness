@@ -39,4 +39,16 @@ export const swiperReviews = new window.Swiper('.swiper-reviews', {
     nextEl: '.swiper-reviews-button-next',
     prevEl: '.swiper-reviews-button-prev',
   },
+}).on('activeIndexChange', function (data) {
+  const {realIndex, wrapperEl} = data;
+
+  const slides = wrapperEl.querySelectorAll('.swiper-slide');
+  const currentSlide = slides[realIndex];
+
+  for (let i = 0; i < slides.length; ++i) {
+    slides[i].removeAttribute('tabindex');
+  }
+
+  currentSlide.setAttribute('tabindex', 0);
+
 });

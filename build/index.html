@@ -445,10 +445,12 @@
           <div class="container">
             <div class="reviews-content">
               <h2>Отзывы</h2>
+              <button class="swiper-button-prev swiper-reviews-button-prev" type="button"><span class="visually-hidden">Предыдущий слайд</span>
+              </button>
               <div class="swiper-reviews">
                 <div class="swiper-wrapper">
                   <!-- Slides -->
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" tabindex="0">
                     <div class="swiper-reviews-slide">
                       <div class="swiper-reviews-slide__avatar">
                         <picture>
@@ -486,8 +488,6 @@
                   </div>
                 </div>
               </div>
-              <button class="swiper-button-prev swiper-reviews-button-prev" type="button"><span class="visually-hidden">Предыдущий слайд</span>
-              </button>
               <button class="swiper-button-next swiper-reviews-button-next" type="button"><span class="visually-hidden">Следующий слайд</span>
               </button>
             </div>
@@ -508,8 +508,15 @@
                         </div>
                         <div class="form__phone">
                           <label for="input-2">Телефон</label>
-                          <input type="tel" id="input-2" placeholder="Телефон" name="Телефон" required pattern="^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$"
-                          title="разрешено использовать только цифры">
+                          <input
+                            type="tel"
+                            id="input-2"
+                            placeholder="Телефон"
+                            name="Телефон"
+                            required
+                            pattern="^(\+7|8)(\(\d+\))?[\d\-]*$"
+                            title="нельзя использовать буквы. Номер должен начинаться с +7 или 8"
+                          >
                         </div>
                       </div>
                       <input class="form__button btn" type="submit" value="Отправить">
