@@ -4,6 +4,7 @@ import './modules/scroll';
 import './modules/play-video';
 import './modules/tabs';
 import './modules/swiper-slider';
+import './modules/phone-input';
 
 // ---------------------------------
 

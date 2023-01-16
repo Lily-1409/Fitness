@@ -352,51 +352,50 @@
               </div>
             </div>
           </div>
-          <button class="swiper-button-prev swiper-trainers-button-prev" type="button"><span class="visually-hidden">Предыдущий слайд</span>
+          <button class="swiper-button-prev swiper-trainers-button-prev" type="button">
+            <span class="swiper-button-prev-arrow-prev"></span>
+            <span class="visually-hidden">Предыдущий слайд</span>
           </button>
-          <button class="swiper-button-next swiper-trainers-button-next" type="button"><span class="visually-hidden">Следующий слайд</span>
+          <button class="swiper-button-next swiper-trainers-button-next" type="button">
+            <span class="swiper-button-prev-arrow-next"></span>
+            <span class="visually-hidden">Следующий слайд</span>
           </button>
         </section>
         <section class="advantages-wrapper">
           <h2>Наши преимущества</h2>
           <ul class="advantages">
             <li class="advantages-item">
-              <span class="advantages-item__number">900
-                <span class="advantages-item__unit">кв/м</span>
-              </span>
+              <span class="advantages-item__number">900</span>
+              <span class="advantages-item__unit">кв/м</span>
               <div class="advantages-item__wrapper">
                 <h4>Площадь</h4>
                 <p>Занимайтесь без очередей и&nbsp;толпучки</p>
               </div>
             </li>
             <li class="advantages-item">
-              <span class="advantages-item__number">70
-                <span class="advantages-item__unit">машин</span>
-              </span>
+              <span class="advantages-item__number">70</span>
+              <span class="advantages-item__unit">машин</span>
               <div class="advantages-item__wrapper">
                 <h4>Собственная парковка</h4>
                 <p>Вы всегда найдете место для своей машины на нашей парковке</p>
               </div>
             </li>
             <li class="advantages-item advantages-item--main">
-              <span class="advantages-item__number-other">100
-              </span>
+              <span class="advantages-item__number-other">100</span>
               <h4>Тренажеров</h4>
               <p>Современные тренажеры <span class="advantages-item__span">на все группы мышц</span></p>
             </li>
             <li class="advantages-item">
-              <span class="advantages-item__number advantages-item__number--line-before">350
-                <span class="advantages-item__unit">мест</span>
-              </span>
+              <span class="advantages-item__number advantages-item__number--line-before">350</span>
+              <span class="advantages-item__unit">мест</span>
               <div class="advantages-item__wrapper">
                 <h4>Комфорт</h4>
                 <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
               </div>
             </li>
             <li class="advantages-item">
-              <span class="advantages-item__number advantages-item__number--line-after advantages-item__number--space">5+
-                <span class="advantages-item__unit">лет</span>
-              </span>
+              <span class="advantages-item__number advantages-item__number--line-after advantages-item__number--space">5+</span>
+              <span class="advantages-item__unit">лет</span>
               <div class="advantages-item__wrapper">
                 <h4>Тренерский опыт</h4>
                 <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
@@ -445,7 +444,9 @@
           <div class="container">
             <div class="reviews-content">
               <h2>Отзывы</h2>
-              <button class="swiper-button-prev swiper-reviews-button-prev" type="button"><span class="visually-hidden">Предыдущий слайд</span>
+              <button class="swiper-button-prev swiper-reviews-button-prev" type="button">
+                <span class="swiper-button-prev-arrow-prev"></span>
+                <span class="visually-hidden">Предыдущий слайд</span>
               </button>
               <div class="swiper-reviews">
                 <div class="swiper-wrapper">
@@ -488,7 +489,9 @@
                   </div>
                 </div>
               </div>
-              <button class="swiper-button-next swiper-reviews-button-next" type="button"><span class="visually-hidden">Следующий слайд</span>
+              <button class="swiper-button-next swiper-reviews-button-next" type="button">
+                <span class="swiper-button-prev-arrow-next"></span>
+                <span class="visually-hidden">Следующий слайд</span>
               </button>
             </div>
           </div>
@@ -504,7 +507,7 @@
                       <div class="form__container">
                         <div class="form__name">
                           <label for="input-1">Имя</label>
-                          <input type="text" id="input-1" placeholder="Имя" required name="Имя" pattern="^([A-Za-z\-\']{1,50})|([А-Яа-я\-\']{1,50}" title="Разрешено использовать латинские и русские буквы">
+                          <input type="text" id="input-1" placeholder="Имя" required name="Имя" pattern="([A-Za-z \-]{1,50})|([А-Яа-я \-]{1,50})" title="Разрешено использовать латинские и русские буквы">
                         </div>
                         <div class="form__phone">
                           <label for="input-2">Телефон</label>
@@ -514,8 +517,8 @@
                             placeholder="Телефон"
                             name="Телефон"
                             required
-                            pattern="^(\+7|8)(\(\d+\))?[\d\-]*$"
-                            title="нельзя использовать буквы. Номер должен начинаться с +7 или 8"
+                            data-tel-input
+                            maxlength="18"
                           >
                         </div>
                       </div>
